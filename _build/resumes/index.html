@@ -3,46 +3,54 @@
 
 <head>
 
-    {% block head %}
+    
 
-    <meta name="description" content="{% block description %}{% endblock %} - Erick Garcia">
+    <meta name="description" content="
+  Recent Resumes
+ - Erick Garcia">
 
-    <link rel="shortcut icon" type="image/png" href="{{ url_for('static', filename='me-circ.png') }}">
+    <link rel="shortcut icon" type="image/png" href="/static/me-circ.png">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Inter:400,400i,700,700i|Roboto+Mono:400,400i,700" rel="stylesheet">
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <link rel="stylesheet" href="/static/style.css">
 
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@erickhgarciap" />
-    <meta name="twitter:title" content="{{ self.title() }}" />
-    <meta name="twitter:description" content="{{ self.description() }} - Erick Garcia" />
+    <meta name="twitter:title" content="
+  Resumes
+" />
+    <meta name="twitter:description" content="
+  Recent Resumes
+ - Erick Garcia" />
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
 
-    <title>{% block title %}{% endblock %} - Erick Garcia</title>
+    <title>
+  Resumes
+ - Erick Garcia</title>
 
-    {% endblock %}
+    
 </head>
 
 <body>
     <div id="navbar-container" class="mobile-padded">
         <ul id="navbar">
             <li class="navbutton">
-                <a href="{{url_for('home')}}" {% if current_page=='Home' %}class="sweep current" {% endif %} class="sweep">Home</a>
+                <a href="/"  class="sweep">Home</a>
             </li>
             <li class="navbutton">
-                <a href="{{url_for('mywork')}}" {% if current_page=='My work' %}class="sweep current" {% endif %} class="sweep">My work</a>
+                <a href="/my-work/"  class="sweep">My work</a>
             </li>
             <li class="navbutton">
-                <a href="{{url_for('about')}}" {% if current_page=='About' %}class="sweep current" {% endif %} class="sweep">About</a>
+                <a href="/about/"  class="sweep">About</a>
             </li>
             <li class="navbutton">
-                <a href="{{url_for('contact')}}" {% if current_page=='Contact' %}class="sweep current" {% endif %} class="sweep">Contact</a>
+                <a href="/contact/"  class="sweep">Contact</a>
             </li>
             <li class="navbutton">
-                <a href="{{url_for('resumes')}}" {% if current_page=='Resumes' %}class="sweep current" {% endif %} class="sweep">Resumes</a>
+                <a href="/resumes/" class="sweep current"  class="sweep">Resumes</a>
             </li>
 
         </ul>
@@ -50,7 +58,19 @@
     <div id="centred-container">
         <div id="main">
             <div id="content">
-                {% block content %}{% endblock %}
+                
+  <h1 class="title">Web 2.0 Resume
+</h1>
+<div style="text-align:center">
+    <embed src="https://drive.google.com/file/d/1yokQ2vI0eXsm9Uc5RfBffDwV5nTR01wz/preview" width="600px" height="500px" />
+    </div>
+
+<h1 class="title">Web 3.0 Resume
+</h1>
+<div style="text-align:center">
+    <embed src="https://drive.google.com/file/d/1xcTee6EHcJqkGSEb0CXWqEw7sW2pBJFW/preview" width="600px" height="500px" />
+    </div>
+
             </div>
         </div>
     </div>
@@ -58,12 +78,12 @@
     </div>
     <div id="footer-container">
         <div id="footer">
-            {% block footer %}
+            
             <ul class="footer-ul">
-                <li> <i class="fa fa-copyright" aria-hidden="true"></i> Erick Garcia {{ year }}</li>
+                <li> <i class="fa fa-copyright" aria-hidden="true"></i> Erick Garcia 2021</li>
                 <li><a onclick="topFunction()" style="cursor:pointer">Back to top <i class="fa fa-fw fa-long-arrow-up" aria-hidden="true"></i></a></li>
             </ul>
-            {% endblock %}
+            
         </div>
     </div>
 
