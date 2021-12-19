@@ -64,7 +64,7 @@ def st():
 
 @app.route("/favicon.ico")
 def favicon():
-    return url_for("static", filename="me_circ.png")
+    return url_for("static", filename="me-circ.png")
 
 
 @app.errorhandler(404)
