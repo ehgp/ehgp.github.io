@@ -1,0 +1,44 @@
+<div class="card">
+  {% if current_page == "Contact"%}
+  <h1 class="title">Contact
+  </h1>
+  {% else %}
+  <h2 class="section-title">
+    <a href="{{ url_for('contact')}}" class="arrow">Contact</a>
+  </h2>
+  {% endif %}
+
+    <div class="inner-card">
+    <ul class="contact">
+
+      <li title="twitter">
+        <a href="http://twitter.com/erickhgarciap">
+          <i class="fa fa-twitter fa-fw" aria-hidden="true" style="color:#1da1f2"></i>
+          @erickhgarciap
+        </a>
+     </li>
+
+      <li title="email">
+        <a href='mailto&#58;erickhgarciap&#64;gmail&#46;&#99;om'>
+          <i class="fa fa-envelope fa-fw" aria-hidden="true" style="color:#ffa930"></i>
+          erickhgarciap&#64;gmail&#46;&#99;om
+        </a>
+      </li>
+
+      <li title="github">
+        <a href="http://github.com/ehgp">
+          <i class="fa fa-github fa-fw" aria-hidden="true" style="color:#4078c0"></i>
+          ehgp
+        </a>
+      </li>
+
+      <li title="LinkedIn">
+        <a href="https://www.linkedin.com/in/erick-garcia93/">
+          <i class="fa fa-linkedin fa-fw" aria-hidden="true" style="color:#4078c0"></i>
+          Erick Garcia Linked In
+        </a>
+      </li>
+
+    </ul>
+  </div>
+</div>

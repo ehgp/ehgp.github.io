@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Home
+{% endblock %}
+
+{% block description %}
+  Homepage of Erick Garcia, Master's in Data Science and Cybersecurity at UMBC
+{% endblock %}
+
+{% block content %}
+  <h1 class="title">Erick Garcia<span class="blink pre-spaced">_</span>
+  </h1>
+  {% include 'tagline-card.html' %}
+  {% include 'contact-card.html' %}
+{% endblock %}
