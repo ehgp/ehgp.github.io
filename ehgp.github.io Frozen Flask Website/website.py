@@ -73,8 +73,8 @@ def page_not_found(err):
 
 
 if __name__ == "__main__":
-    from elsa import cli
+    # from elsa import cli
 
-    cli(app, base_url="https://ehgp.github.io")
+    # cli(app, base_url="https://ehgp.github.io")
     # cli(app.run(debug=True), base_url="http://127.0.0.1:5000/")
-    # app.run(debug=True)
+    app.run(debug=True)
