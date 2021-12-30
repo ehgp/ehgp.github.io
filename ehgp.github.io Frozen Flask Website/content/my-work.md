@@ -26,10 +26,10 @@ I am currently working on the following projects:
 
 * Venture capitalism website promoting my business.
 
-* CevicheSwap, Automatic Market Maker hosted on Avalance C-Chain.
+* CevicheSwap, Automatic Market Maker hosted on Avalanche C-Chain.
 
 * TikTok hits uploader for YT studio.
 
 * Automatic NFT marketplace development.
 
-* Revamping Twitter API as Python first pipeline for predicting stock sentiment analysis weighting for [Numerai Signals Tournament](https://signals.numer.ai/tournament)
+* Revamping DATA603_TwitterAPI-AI as Python first pipeline for predicting stock sentiment analysis weighting for [Numerai Signals Tournament](https://signals.numer.ai/tournament)
