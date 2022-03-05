@@ -8,4 +8,4 @@ This Personal page is built with Python (Flask + Flask-FlatPages) and custom HTM
 
 ## Screenshot
 
-![Screenshot of http://ehgp.github.io/](/"ehgp.github.io Frozen Flask Website"/media/screenshot.png)
+![Screenshot of http://ehgp.github.io/](/ehgp.github.io_Frozen_Flask_Website/media/screenshot.png)
