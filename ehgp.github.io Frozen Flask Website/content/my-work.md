@@ -4,9 +4,9 @@ My open sourced work can be found at my [GitHub](http://github.com/ehgp).
 
 Notable public software:
 
-* [fb etsy ebay mp selenium](https://github.com/ehgp/fb_etsy_ebay_mp_selenium) - Automate listing in FB, ETSY and EBAY Marketplaces from an Excel Sheet and webscrapers.
+* [ecommerce_autolister](https://github.com/ehgp/ecommerce_autolister) - Automate listing in FB, ETSY and EBAY Marketplaces from an Excel Sheet and webscrapers.
 
-* [youtube manager](https://github.com/ehgp/youtube_manager) - YouTube manage download and uploads of videos into YT studio.
+* [youtube_manager](https://github.com/ehgp/youtube_manager) - YouTube manage download and uploads of videos into YT studio.
 
 * [ChemECoin](https://github.com/ehgp/chemecoin) - The crypto coin backed by chemical engineering technology and advancement for chemical engineers worldwide. Coin offerings done in 2018. [Solidity contract of Ropsten Testnet ERC20 Token](https://ropsten.etherscan.io/address/0xb6ba833c8065c138627b11249c842a6f567d3742)
 
@@ -30,6 +30,6 @@ I am currently working on the following projects:
 
 * TikTok hits uploader for YT studio.
 
-* Automatic NFT marketplace development.
+* Joint Automatic NFT marketplace development with VR component.
 
 * Revamping DATA603_TwitterAPI-AI as Python first pipeline for predicting stock sentiment analysis weighting for [Numerai Signals Tournament](https://signals.numer.ai/tournament)

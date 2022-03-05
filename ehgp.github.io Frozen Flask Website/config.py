@@ -1,3 +1,4 @@
+"""config."""
 import os
 
 DEBUG = True
