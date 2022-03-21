@@ -1,3 +1,4 @@
+"""Freeze page for Github Pages."""
 from flask_frozen import Freezer
 from website import app
 
