@@ -4,7 +4,9 @@ This Personal page is built with Python (Flask + Flask-FlatPages) and custom HTM
 
 * I had to freeze the website first using "python freezer.py".
 
-* Had to paste contents of _build into the main branch for GitHub Pages to host.
+* Had to paste contents of _build into the gh-pages branch for GitHub Pages to host.
+
+* All of the above was performed using a github workflow file.
 
 ## Screenshot
 
