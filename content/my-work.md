@@ -8,8 +8,7 @@ Notable public software:
 Sphinx, Pandas, Networkx, requests, docker-compose, SQLite3
 ● Websocket enabled real time trading bot which uses two models to find arbitrage opportunities.
 Triangular arbitrage using Pandas manipulations and Bellman Ford optimization using DAGs.
-● Account balance and order fulfillment real time tracking and ‘Fill or Kill’ creation of orders to
-make sure orders execute in an all or nothing fashion.
+● Account balance and order fulfillment real time tracking and ‘Fill or Kill’ creation of orders to make sure orders execute in an all or nothing fashion.
 ● Github CICD pipeline for Sphinx documentation publishing in Github Pages and proper Python
 linting up to PEP8 standards.
 
