@@ -322,7 +322,7 @@ pre {
     max-width: 100%;
     max-height: 1500px;
     margin: auto;
-    display: block;
+    /* display: block; */
 }
 
 p.noimage {
@@ -521,11 +521,11 @@ ul.tags a {
 }
 
 ul.tags li span {
-    vertical-align: left;
+    vertical-align: center;
 }
 
 img.tag-icon {
-    vertical-align: left;
+    vertical-align: center;
     width: 16px;
     height: 16px;
     margin: 0 4px;
