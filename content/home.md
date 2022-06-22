@@ -9,7 +9,7 @@
 
 - 💬 Ask me about **Web Development**, **Web3**, **Investments**, **Engineering**
 
-- 📫 How to reach me **ehgp@utexas.edu**
+- 📫 How to reach me **[ehgp@utexas.edu](mailto&#58;ehgp&#64;utexas&#46;edu)**
 
 <!-- - 📝 I regularly write articles on my [blog](https://blog.itsrakesh.co) -->
 
