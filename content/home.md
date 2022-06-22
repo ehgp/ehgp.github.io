@@ -54,12 +54,16 @@
 [![bootstrap](https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white)](https://ehgp.github.io)
 [![trino](https://img.shields.io/badge/trino-dd00a1?style=for-the-badge&logo=trino&logoColor=white)](https://ehgp.github.io)
 [![spark](https://img.shields.io/badge/spark-F55B14?style=for-the-badge&logo=apache&logoColor=white)](https://ehgp.github.io)
+[![kafka](https://img.shields.io/badge/kafka-000000?style=for-the-badge&logo=apache&logoColor=white)](https://ehgp.github.io)
+[![storm](https://img.shields.io/badge/storm-000000?style=for-the-badge&logo=apache&logoColor=white)](https://ehgp.github.io)
+[![selenium](https://img.shields.io/badge/selenium-000000?style=for-the-badge&logo=selenium&logoColor=white)](https://ehgp.github.io)
 
-### 🗃️ Databases
+### 🗃️ Databases/Data Lake/Data Warehouse
 
 [![mongodb](https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white)](https://ehgp.github.io)
 [![mysql](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://ehgp.github.io)
 [![sqlite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)](https://ehgp.github.io)
+[![hadoop](https://img.shields.io/badge/hadoop-000000?style=for-the-badge&logo=apache&logoColor=white)](https://ehgp.github.io)
 
 ### ⚒️ Tools
 
