@@ -333,7 +333,7 @@ p.noimage {
     text-decoration: none;
     font-size: 14px !important;
     padding: 16px 24px;
-    text-align: left;
+    text-align: center;
     text-transform: uppercase;
     font-weight: 700;
     font-family: 'Roboto Mono', sans-serif;
@@ -521,11 +521,11 @@ ul.tags a {
 }
 
 ul.tags li span {
-    vertical-align: middle;
+    vertical-align: left;
 }
 
 img.tag-icon {
-    vertical-align: middle;
+    vertical-align: left;
     width: 16px;
     height: 16px;
     margin: 0 4px;
