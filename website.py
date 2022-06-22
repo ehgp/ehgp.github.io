@@ -30,7 +30,8 @@ def utility_processor():
 @app.route("/")
 def home():
     """Home Page."""
-    return render_template("home.html", current_page="Home")
+    home_html = markdown2.markdown_path("content/home.md")
+    return render_template("home.html", current_page="Home", home_html=home_html)
 
 
 @app.route("/me/")
