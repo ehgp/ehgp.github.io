@@ -30,8 +30,8 @@ def utility_processor():
 @app.route("/")
 def home():
     """Home Page."""
-    home_html = markdown2.markdown_path("content/home.md")
-    return render_template("home.html", current_page="Home", home_html=home_html)
+    home_md = markdown2.markdown_path("content/home.md")
+    return render_template("home.html", current_page="Home", home_md=home_md)
 
 
 @app.route("/me/")
@@ -43,8 +43,8 @@ def me():
 @app.route("/about/")
 def about():
     """About Page."""
-    about_html = markdown2.markdown_path("content/about.md")
-    return render_template("about.html", current_page="About", about_html=about_html)
+    about_md = markdown2.markdown_path("content/about.md")
+    return render_template("about.html", current_page="About", about_md=about_md)
 
 
 @app.route("/contact/")
@@ -56,8 +56,8 @@ def contact():
 @app.route("/my-work/")
 def mywork():
     """My Work Page."""
-    work_html = markdown2.markdown_path("content/my-work.md")
-    return render_template("my-work.html", current_page="My work", work_html=work_html)
+    work_md = markdown2.markdown_path("content/my-work.md")
+    return render_template("my-work.html", current_page="My work", work_md=work_md)
 
 
 @app.route("/resumes/")
