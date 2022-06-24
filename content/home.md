@@ -40,6 +40,7 @@
 [![css3](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)](https://ehgp.github.io)
 [![plsql](https://img.shields.io/badge/PLSQL-F80000?style=for-the-badge&logo=oracle&logoColor=black)](https://ehgp.github.io)
 [![solidity](https://img.shields.io/badge/solidity-000000?style=for-the-badge&logo=solidity&logoColor=white)](https://ehgp.github.io)
+[![scala](https://img.shields.io/badge/scala-DC322F?style=for-the-badge&logo=scala&logoColor=white)](https://ehgp.github.io)
 
 ### 🧩 Frameworks/Libraries
 
@@ -57,6 +58,7 @@
 [![kafka](https://img.shields.io/badge/kafka-000000?style=for-the-badge&logo=apache&logoColor=white)](https://ehgp.github.io)
 [![storm](https://img.shields.io/badge/storm-000000?style=for-the-badge&logo=apache&logoColor=white)](https://ehgp.github.io)
 [![selenium](https://img.shields.io/badge/selenium-000000?style=for-the-badge&logo=selenium&logoColor=white)](https://ehgp.github.io)
+[![tensorflow](https://img.shields.io/badge/tensorflow-ff6f00?style=for-the-badge&logo=tensorflow&logoColor=white)](https://ehgp.github.io)
 
 ### 🗃️ Databases/Data Lake/Data Warehouse
 
@@ -64,6 +66,8 @@
 [![mysql](https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white)](https://ehgp.github.io)
 [![sqlite](https://img.shields.io/badge/SQLite-07405E?style=for-the-badge&logo=sqlite&logoColor=white)](https://ehgp.github.io)
 [![hadoop](https://img.shields.io/badge/hadoop-000000?style=for-the-badge&logo=apache&logoColor=white)](https://ehgp.github.io)
+[![snowflake](https://img.shields.io/badge/snowflake-0693e3?style=for-the-badge&logo=snowflake&logoColor=white)](https://ehgp.github.io)
+[![cassandra](https://img.shields.io/badge/cassandra-1c81a0?style=for-the-badge&logo=apache&logoColor=white)](https://ehgp.github.io)
 
 ### ⚒️ Tools
 
@@ -79,7 +83,6 @@
 [![npm](https://img.shields.io/badge/npm-CB3837?style=for-the-badge&logo=npm&logoColor=white)](https://ehgp.github.io)
 [![pypi](https://img.shields.io/badge/pypi-3775A9?style=for-the-badge&logo=pypi&logoColor=white)](https://ehgp.github.io)
 [![conda](https://img.shields.io/badge/conda-342B029.svg?&style=for-the-badge&logo=anaconda&logoColor=white)](https://ehgp.github.io)
-[![snowflake](https://img.shields.io/badge/snowflake-0693e3?style=for-the-badge&logo=snowflake&logoColor=white)](https://ehgp.github.io)
 [![ngrok](https://img.shields.io/badge/ngrok-007aff?style=for-the-badge&logo=ngrok&logoColor=white)](https://ehgp.github.io)
 [![databricks](https://img.shields.io/badge/databricks-FF3621?style=for-the-badge&logo=databricks&logoColor=white)](https://ehgp.github.io)
 [![tableau](https://img.shields.io/badge/tableau-ffffff?style=for-the-badge&logo=tableau&logoColor=black)](https://ehgp.github.io)
