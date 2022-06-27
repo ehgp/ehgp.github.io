@@ -3,7 +3,7 @@
 <h1 align="center">Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30">, I'm EHGP</h1>
 <h3 align="center">🌐 Web Developer 🧑‍💻 Data Scientist 🧩 Cybersecurity</h3>
 
-- 🌱 I’m currently learning **Web3**
+- 🌱 I’m currently learning **Web3**, **XR**
 
 - 👨‍💻 All of my projects are available [here](https://ehgp.github.io/my-work/)
 
