@@ -4,6 +4,12 @@ My open sourced work can be found at my [GitHub](http://github.com/ehgp).
 
 Notable public software:
 
+* [Religion Word Analysis](https://github.com/ehgp/realtime_crypto_arbitrage_bot)<br>
+Pipenv, NLTK Tokenization, Regular Expression, PyPDF2, GitHub Pages Sphinx Documentation<br>
+● This project was inspired by this Reddit [post](https://www.reddit.com/r/dataisbeautiful/comments/mxu578/oc_remix_a_wordcloud_for_each_of_the_six_largest/?utm_source=share&utm_medium=android_app&utm_name=androidcss&utm_term=1&utm_content=share_button).<br>
+● I noticed the words God, Lord, Allah being mentioned many times and I wanted to get a different context by playing around with different stopwords.<br>
+● This code produces bar plots of the 10 most common words in the scriptures and a word clouds for each.<br>
+
 * [Real Time Crypto Arbitrage Bot](https://github.com/ehgp/realtime_crypto_arbitrage_bot)<br>
 Sphinx, Pandas, Networkx, requests, docker-compose, SQLite3<br>
 ● Websocket enabled real time trading bot which uses two models to find arbitrage opportunities.
