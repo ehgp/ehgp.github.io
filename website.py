@@ -16,7 +16,7 @@ from flask import (
 import markdown2
 
 cfd = os.path.dirname(os.path.realpath(__file__))
-app = Flask(__name__, static_folder="static")
+app = Flask(__name__, static_folder="static", static_url_path="")
 app.config.from_pyfile("config.py")
 
 # custom jinja functions
@@ -68,10 +68,10 @@ def resumes():
     return render_template("resume.html", current_page="Resumes")
 
 
-@app.route("/static/")
-def st():
-    """Execute Static."""
-    return ""
+# @app.route("/static/")
+# def st():
+#     """Execute Static."""
+#     return ""
 
 
 # @app.route("/favicon.ico")
