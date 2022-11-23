@@ -68,10 +68,10 @@ def resumes():
     return render_template("resume.html", current_page="Resumes")
 
 
-@app.route("/static/")
-def st():
-    """Execute Static."""
-    return ""
+# @app.route("/static/")
+# def st():
+#     """Execute Static."""
+#     return ""
 
 
 # @app.route("/favicon.ico")
