@@ -16,17 +16,10 @@ from flask import (
 import markdown2
 
 cfd = os.path.dirname(os.path.realpath(__file__))
-app = Flask(__name__)
+app = Flask(__name__, static_folder=os.path.join(cfd, "static"))
 app.config.from_pyfile("config.py")
 
 # custom jinja functions
-
-
-@app.route("/robots.txt")
-@app.route("/sitemap.xml")
-def static_from_root():
-    """Serve static files from root."""
-    return send_from_directory(app.static_folder, request.path[1:])
 
 
 @app.context_processor
