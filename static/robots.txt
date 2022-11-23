@@ -1,3 +1,4 @@
 # https://www.robotstxt.org/robotstxt.html
+Sitemap: https://ehgp.github.io/sitemap.xml
 User-agent: *
 Disallow:
