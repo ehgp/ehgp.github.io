@@ -10,6 +10,8 @@ from flask import (
     current_app,
     url_for,
     redirect,
+    send_from_directory,
+    request,
 )
 import markdown2
 
@@ -18,6 +20,13 @@ app = Flask(__name__)
 app.config.from_pyfile("config.py")
 
 # custom jinja functions
+
+
+@app.route("/robots.txt")
+@app.route("/sitemap.xml")
+def static_from_root():
+    """Serve static files from root."""
+    return send_from_directory(app.static_folder, request.path[1:])
 
 
 @app.context_processor
