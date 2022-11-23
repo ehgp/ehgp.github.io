@@ -16,7 +16,7 @@ from flask import (
 import markdown2
 
 cfd = os.path.dirname(os.path.realpath(__file__))
-app = Flask(__name__, static_folder=os.path.join(cfd, "static"))
+app = Flask(__name__, static_folder="static")
 app.config.from_pyfile("config.py")
 
 # custom jinja functions
