@@ -30,9 +30,9 @@ linting up to PEP8 standards.
 Using initial batch analysis from Twitter API into HDFS for Python Sentiment Analysis training.
 Deploying Real-Time Streaming analytics engine powered by Apache Kakfa, Apache Storm & Python.
 Python used for visualizations, Hadoop Windows VM Instance used.
-By Joel Nantais, Chuck Rainville & Erick Garcia
+By Joel Nantais, Chuck Rainville & EHGP
 
-* [Global_CO2_Py_Tableau](https://github.com/ehgp/Global_CO2_Py_Tableau) - Global CO2 Emissions By Samar Manjeshwar & Erick Garcia. Regression analysis and visualization in Python and Tableau visualization of data. Using dataset from: Boden, T.A., G. Marland, and R.J. Andres. 2017. Global, Regional, and National Fossil-Fuel CO2 Emissions. Carbon Dioxide Information Analysis Center, Oak Ridge National Laboratory, U.S. Department of Energy, Oak Ridge, Tenn., U.S.A. doi 10.3334/CDIAC/00001_V2017
+* [Global_CO2_Py_Tableau](https://github.com/ehgp/Global_CO2_Py_Tableau) - Global CO2 Emissions By Samar Manjeshwar & EHGP. Regression analysis and visualization in Python and Tableau visualization of data. Using dataset from: Boden, T.A., G. Marland, and R.J. Andres. 2017. Global, Regional, and National Fossil-Fuel CO2 Emissions. Carbon Dioxide Information Analysis Center, Oak Ridge National Laboratory, U.S. Department of Energy, Oak Ridge, Tenn., U.S.A. doi 10.3334/CDIAC/00001_V2017
 
 * [HelloWorldNN](https://github.com/ehgp/HelloWorldNN) - Digit recognition using MLP at 92% Accuracy.
 
