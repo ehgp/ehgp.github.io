@@ -75,7 +75,7 @@ def resumes():
 
 # @app.route("/favicon.ico")
 # def favicon():
-#     return url_for("static", filename="me-circ.png")
+#     return url_for("static", filename="resume-pic.webp")
 
 
 @app.errorhandler(404)
