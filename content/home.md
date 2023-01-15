@@ -1,4 +1,4 @@
-<!-- [![itsrakesh.co](https://user-images.githubusercontent.com/70439799/150669911-f4770983-6987-48b8-ad53-a5542231e894.gif)](https://ehgp.github.io) -->
+<!-- [![ehgp.github.io]()](https://ehgp.github.io) -->
 
 <h1 align="center">Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30">, I'm EHGP</h1>
 <h3 align="center">🌐 Web Developer 🧑‍💻 Data Scientist 🧩 Cybersecurity</h3>
@@ -11,9 +11,9 @@
 
 - 📫 How to reach me **[ehgp@utexas.edu](mailto&#58;ehgp&#64;utexas&#46;edu)**
 
-<!-- - 📝 I regularly write articles on my [blog](https://blog.itsrakesh.co) -->
+<!-- - 📝 I regularly write articles on my [blog]() -->
 
-### 🤝 Connect with me:
+### 🤝 Connect with me
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=Portfolio&logoColor=white)](https://ehgp.github.io)
 [![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/egventures_net)
