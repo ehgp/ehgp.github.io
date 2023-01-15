@@ -1,6 +1,8 @@
 # Summary
 
-I have been a professional programmer for 3 years with experience in Machine Learning, code tooling, and automation. I currently hold a Data Science Master's degree from the University of Maryland at Baltimore County with a Master's certificate in Cybersecurity. My alma matter is The University of Texas at Austin in Chemical Engineering with a focus on Business Economics. I am a self-motivated team member with desire to learn new technologies and being up to date in the following industries:
+Master's Data Science UMBC.  BS Chemical Eng UTX A .
+
+Industries:
 
 * Full Stack Software Engineering MERN, PERN.
 

@@ -3,7 +3,7 @@
 <h1 align="center">Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30">, I'm EHGP</h1>
 <h3 align="center">🌐 Web Developer 🧑‍💻 Data Scientist 🧩 Cybersecurity</h3>
 
-- 🌱 I’m currently learning **Web3**, **XR**
+- 🌱 I’m currently learning **ERP**, **Industrial Sofware**
 
 - 👨‍💻 All of my projects are available [here](https://ehgp.github.io/my-work/)
 
@@ -16,8 +16,7 @@
 ### 🤝 Connect with me:
 
 [![Portfolio](https://img.shields.io/badge/Portfolio-000000?style=for-the-badge&logo=Portfolio&logoColor=white)](https://ehgp.github.io)
-[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/ehgp93)
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/erick-garcia93/)
+[![Twitter](https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/egventures_net)
 
 ---
 
@@ -121,11 +120,6 @@
 <!-- ### 📜 Latest Blog Posts -->
 
 <!-- BLOG-POST-LIST:START -->
-<!-- - [Most active Developer Communities you should join in 2022](https://medium.com/@itsrakesh/most-active-developer-communities-you-should-join-in-2022-cb7254f8620?source=rss-e09c62468ad2------2)
-- [What is Blockchain? How does it work? Why do we need it?](https://medium.com/codex/what-is-blockchain-how-does-it-work-why-do-we-need-it-2e748a8edcc9?source=rss-e09c62468ad2------2)
-- [Join me in the #100DaysOfWeb3 challenge](https://medium.com/@itsrakesh/join-me-in-the-100daysofweb3-challenge-abc13e831d27?source=rss-e09c62468ad2------2)
-- [Taking Open Source contributions and communities to next level with the Reward System](https://medium.com/codex/taking-open-source-contributions-and-communities-to-next-level-with-the-reward-system-9d6e943cef48?source=rss-e09c62468ad2------2)
-- [How the Web works — Behind the scenes](https://bootcamp.uxdesign.cc/how-the-web-works-behind-the-scenes-a7e54a1a240f?source=rss-e09c62468ad2------2) -->
 <!-- BLOG-POST-LIST:END -->
 
 <!-- --- -->

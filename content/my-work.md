@@ -36,16 +36,6 @@ By Joel Nantais, Chuck Rainville & Erick Garcia
 
 * [HelloWorldNN](https://github.com/ehgp/HelloWorldNN) - Digit recognition using MLP at 92% Accuracy.
 
-## Unreleased projects
-
-I am currently working on the following projects:
-
-* Venture capitalism website promoting my business.
-
-* CevicheSwap, Automatic Market Maker hosted on Avalanche C-Chain.
-
-* TikTok hits uploader for YT studio.
-
 * Joint Automatic NFT marketplace development with VR component.
 
 * Revamping DATA603_TwitterAPI-AI as Python first pipeline for predicting stock sentiment analysis weighting for [Numerai Signals Tournament](https://signals.numer.ai/tournament)
