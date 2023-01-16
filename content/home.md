@@ -6,7 +6,7 @@
 
 - 🌱 I’m currently learning **ERP**, **Industrial Sofware**
 
-- 👨‍💻 [Projects](https://ehgp.github.io/my-work/)
+- 👨‍💻 **[Projects](https://ehgp.github.io/my-work/)**
 
 - 💬 Ask me about **Web Development**, **Web3**, **Investments**, **Engineering**
 
