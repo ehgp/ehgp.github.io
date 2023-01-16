@@ -718,3 +718,10 @@ ul.footer-ul li a:hover {
         width: 320px;
     }
 }
+
+@font-face {
+    font-family: 'Font-Awesome';
+    src: url('form/font-awesome-4.7.0/fonts/fontawesome-webfont.woff2') format("woff2"),
+    url('form/font-awesome-4.7.0/fonts/fontawesome-webfont.woff') format('woff'),
+    url('form/font-awesome-4.7.0/fonts/fontawesome-webfont.ttf') format('truetype');
+    }
