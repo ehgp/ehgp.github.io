@@ -6,19 +6,19 @@ Notable public software:
 
 * [Religion Word Analysis](https://github.com/ehgp/religion_word_analysis)<br>
 Pipenv, NLTK Tokenization, Regular Expression, PyPDF2, GitHub Pages Sphinx Documentation<br>
-● This project was inspired by this Reddit [post](https://www.reddit.com/r/dataisbeautiful/comments/mxu578/oc_remix_a_wordcloud_for_each_of_the_six_largest/?utm_source=share&utm_medium=android_app&utm_name=androidcss&utm_term=1&utm_content=share_button).<br>
-● I noticed the words God, Lord, Allah being mentioned many times and I wanted to get a different context by playing around with different stopwords.<br>
-● This code produces bar plots of the 10 most common words in the scriptures and a word clouds for each.<br>
-● [Report](https://ehgp.github.io/religion_word_analysis/report.html)
+This project was inspired by this Reddit [post](https://www.reddit.com/r/dataisbeautiful/comments/mxu578/oc_remix_a_wordcloud_for_each_of_the_six_largest/?utm_source=share&utm_medium=android_app&utm_name=androidcss&utm_term=1&utm_content=share_button).<br>
+I noticed the words God, Lord, Allah being mentioned many times and I wanted to get a different context by playing around with different stopwords.<br>
+This code produces bar plots of the 10 most common words in the scriptures and a word clouds for each.<br>
+[Report](https://ehgp.github.io/religion_word_analysis/report.html)
 
 * [Real Time Crypto Arbitrage Bot](https://github.com/ehgp/realtime_crypto_arbitrage_bot)<br>
 Sphinx, Pandas, Networkx, requests, docker-compose, SQLite3<br>
-● Websocket enabled real time trading bot which uses two models to find arbitrage opportunities.
+Websocket enabled real time trading bot which uses two models to find arbitrage opportunities.
 Triangular arbitrage using Pandas manipulations and Bellman Ford optimization using DAGs.<br>
-● Account balance and order fulfillment real time tracking and ‘Fill or Kill’ creation of orders to make sure orders execute in an all or nothing fashion.<br>
-● Github CICD pipeline for Sphinx documentation publishing in Github Pages and proper Python
-linting up to PEP8 standards.
-● [Report](https://ehgp.github.io/realtime_crypto_arbitrage_bot/report.html)
+Account balance and order fulfillment real time tracking and ‘Fill or Kill’ creation of orders to make sure orders execute in an all or nothing fashion.<br>
+Github CICD pipeline for Sphinx documentation publishing in Github Pages and proper Python
+linting up to PEP8 standards.<br>
+[Report](https://ehgp.github.io/realtime_crypto_arbitrage_bot/report.html)
 
 * [ecommerce_autolister](https://github.com/ehgp/ecommerce_autolister) - Automate listing in FB, ETSY and EBAY Marketplaces from an Excel Sheet and webscrapers.
 
