@@ -1,11 +1,12 @@
 <!-- [![ehgp.github.io]()](https://ehgp.github.io) -->
 
-<h1 align="center">Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30">, I'm EHGP</h1>
-<h3 align="center">🌐 Web Developer 🧑‍💻 Data Scientist 🧩 Cybersecurity</h3>
+<h1 align="center">Hi <img src="https://raw.githubusercontent.com/MartinHeinz/MartinHeinz/master/wave.gif" width="30" height="30" alt="...">, I'm EHGP</h1>
+
+<h2 align="center">🌐 Web Developer 🧑‍💻 Data Scientist 🧩 Cybersecurity</h2>
 
 - 🌱 I’m currently learning **ERP**, **Industrial Sofware**
 
-- 👨‍💻 All of my projects are available [here](https://ehgp.github.io/my-work/)
+- 👨‍💻 [Projects](https://ehgp.github.io/my-work/)
 
 - 💬 Ask me about **Web Development**, **Web3**, **Investments**, **Engineering**
 
@@ -22,9 +23,9 @@
 
 ### 📊 Stats
 
-<img src="https://github-readme-stats.vercel.app/api?username=ehgp&include_all_commits=true&show_icons=true&theme=github_dark&hide_border=true" alt="ehgp's github stats" width="48%" align="right" >
+<img src="https://github-readme-stats.vercel.app/api?username=ehgp&include_all_commits=true&show_icons=true&theme=github_dark&hide_border=true" alt="ehgp's github stats" align="right" width="48%" height= "30%" >
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=ehgp&theme=tokyonight&hide_border=true" alt="ehgp's github streak" width="48%" >
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=ehgp&theme=tokyonight&hide_border=true" alt="ehgp's github streak" width="48%" height="30%">
 
 ---
 
