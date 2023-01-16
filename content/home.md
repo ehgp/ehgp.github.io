@@ -23,9 +23,9 @@
 
 ### 📊 Stats
 
-<img src="https://github-readme-stats.vercel.app/api?username=ehgp&include_all_commits=true&show_icons=true&theme=github_dark&hide_border=true" alt="ehgp's github stats" align="right" width="48%" height= "30%" >
+<img src="https://github-readme-stats.vercel.app/api?username=ehgp&include_all_commits=true&show_icons=true&theme=github_dark&hide_border=true" type="image/svg" alt="ehgp's github stats" align="right" width="48%" height= "30%" >
 
-<img src="https://github-readme-streak-stats.herokuapp.com/?user=ehgp&theme=tokyonight&hide_border=true" alt="ehgp's github streak" width="48%" height="30%">
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=ehgp&theme=tokyonight&hide_border=true" type="image/svg" alt="ehgp's github streak" width="48%" height="30%">
 
 ---
 
@@ -108,7 +108,7 @@
 ---
 
 ### 🔝 Most used languages
-  <img alt="languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ehgp&theme=github_dark&hide_border=true&hide=Jupyter%20Notebook,css,html,scss,python,MATLAB&layout=compact" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ehgp&theme=github_dark&hide_border=true&hide=Jupyter%20Notebook,css,html,scss,python,MATLAB&layout=compact" type="image/svg" alt="languages"/>
 
 ---
 
