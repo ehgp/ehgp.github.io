@@ -1,0 +1,16 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+      {
+        "label": "Run Flask Server",
+        "type": "shell",
+        "command": "python website.py",
+        "presentation": {
+          "reveal": "always",
+          "panel": "new",
+          "group": "develop",
+        },
+        "runOptions": { "runOn": "folderOpen" }
+      }
+    ]
+  }
