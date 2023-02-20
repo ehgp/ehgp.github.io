@@ -9,6 +9,7 @@ python = "^3.8"
 Flask = "^2.2.2"
 Frozen-Flask = "^0.18"
 markdown2 = "^2.4.6"
+werkzeurg = "2.2.3"
 
 [tool.poetry.dev-dependencies]
 
