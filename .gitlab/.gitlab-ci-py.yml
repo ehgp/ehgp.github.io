@@ -1,22 +1,7 @@
 default:
-    image: node:16.0
+    image: python:3.7
     before_script:
         - echo "machine gitlab.com login gitlab-ci-token password ${CI_JOB_TOKEN}" > ~/.netrc
-        - apt-get update && apt-get upgrade -y --quiet
-        - changed_files=$(git diff --no-commit-id --name-only -r $CI_COMMIT_SHA)
-        - pip install --upgrade pip setuptools wheel twine pipenv virtualenv conda poetry -- quiet
-        # Base
-        # - pip install -r requirements.txt
-        # # Virtualenv
-        # - virtualenv venv
-        # - source venv/bin/activate
-        # # Pipenv
-        # - pipenv install
-        # # Conda Env
-        # - conda env create -f environment.yml
-        # - conda activate myenv
-        # # Poetry
-        # - poetry install
 
     cache:
         paths:
@@ -30,57 +15,200 @@ default:
     variables:
         GIT_STRATEGY: clone
         PIP_CACHE_DIR: "$CI_PROJECT_DIR/.cache/pip"
-        SAST_DEFAULT_ANALYZERS: bandit,secrets,dependency-check,find-sec-bugs,sast,codeql
+        SAST_DEFAULT_ANALYZERS: semgrep,secrets,dependency-check
+        SECRET_DETECTION_HISTORIC_SCAN: "true"
 
 stages:
     - lint
-    - sec
     - test
-    - build
+    - pages
+    - release
 
+# Doc: https://pre-commit.com/
 lint:
     stage: lint
     allow_failure: true
+    before_script:
+        - echo "machine gitlab.com login gitlab-ci-token password ${CI_JOB_TOKEN}" > ~/.netrc
+        - apt-get update && apt-get upgrade -y --quiet
+        - apt-get install build-essential libssl-dev libffi-dev python3-dev -y --quiet
+        - changed_files=$(git diff --no-commit-id --name-only -r $CI_COMMIT_SHA)
+        - pip install --upgrade pip setuptools wheel pipenv virtualenv conda poetry -- quiet
+        # Base
+        # - pip install -r requirements.txt
+        # # Virtualenv
+        # - virtualenv venv
+        # - source venv/bin/activate
+        # # Pipenv
+        # - pipenv install
+        # # Conda Env
+        # - conda env create -f environment.yml
+        # - conda activate myenv
+        # # Poetry
+        # - poetry install
     script:
-          - pip install --upgrade pip --quiet
-          - pip install -r requirements.txt
-          - pip install pre-commit==2.20.0 --quiet
-          - pre-commit install --file linters/.pre-commit-config.yaml
-          - pre-commit run --all-files
-    only:
-        - main
+        - pip install --upgrade pip --quiet
+        - pip install -r requirements.txt
+        - pip install pre-commit==2.20.0 --quiet
+        - pre-commit install
+        - pre-commit run --all-files
 
+# Doc: https://docs.gitlab.com/ee/user/application_security/sast/
 sast:
-    stage: sec
-    before_script: []
+    stage: test
+    before_script:
+        - echo "machine gitlab.com login gitlab-ci-token password ${CI_JOB_TOKEN}" > ~/.netrc
     allow_failure: true
     include:
-        - template: Security/SAST.gitlab-ci.yml
-        - template: Security/License-Scanning.gitlab-ci.yml
-        - template: Security/Dependency-Scanning.gitlab-ci.yml
-        - template: Security/Find-Sec-Bugs.gitlab-ci.yml
-        - template: Security/Secret-Detection.gitlab-ci.yml
-        - template: Security/CodeQL.gitlab-ci.yml
-    only:
-        - main
+        - template: Jobs/SAST.gitlab-ci.yml
+        - template: Jobs/License-Scanning.gitlab-ci.yml
+        - template: Jobs/Dependency-Scanning.gitlab-ci.yml
+        - template: Jobs/Secret-Detection.gitlab-ci.yml
 
-test:
+# Doc: https://docs.python.org/3/library/doctest.html
+doctest:
     stage: test
     allow_failure: true
     script:
         - pip install -r requirements.txt
-        - pip install pytest --quiet
-        - python -m pytest
-    only:
-        - main
+        - python -m doctest -v
 
-build:
-    stage: build
+# Doc: https://docs.pytest.org/en/stable/
+test:
+    stage: test
+    allow_failure: true
+    before_script:
+        - echo "machine gitlab.com login gitlab-ci-token password ${CI_JOB_TOKEN}" > ~/.netrc
+        - apt-get update && apt-get upgrade -y --quiet
+        - apt-get install build-essential libssl-dev libffi-dev python3-dev -y --quiet
+        - changed_files=$(git diff --no-commit-id --name-only -r $CI_COMMIT_SHA)
+        - pip install --upgrade pip setuptools wheel pipenv virtualenv conda poetry -- quiet
+        # Base
+        # - pip install -r requirements.txt
+        # # Virtualenv
+        # - virtualenv venv
+        # - source venv/bin/activate
+        # # Pipenv
+        # - pipenv install
+        # # Conda Env
+        # - conda env create -f environment.yml
+        # - conda activate myenv
+        # # Poetry
+        # - poetry install
     script:
+        - pip install -r requirements.txt
+        - pip install pytest --quiet
+        - python -m pytest -v --junitxml=pytest.xml
+    artifacts:
+        when: always
+        reports:
+            junit: pytest.xml
+
+# Doc: https://sphinx-doc.org/en/master/usage/index.html
+pages:
+    stage: pages
+    before_script:
+        - echo "machine gitlab.com login gitlab-ci-token password ${CI_JOB_TOKEN}" > ~/.netrc
+        - apt-get update && apt-get upgrade -y --quiet
+        - apt-get install build-essential libssl-dev libffi-dev python3-dev -y --quiet
+        - changed_files=$(git diff --no-commit-id --name-only -r $CI_COMMIT_SHA)
+        - pip install --upgrade pip setuptools wheel pipenv virtualenv conda poetry -- quiet
+        # Base
+        # - pip install -r requirements.txt
+        # # Virtualenv
+        # - virtualenv venv
+        # - source venv/bin/activate
+        # # Pipenv
+        # - pipenv install
+        # # Conda Env
+        # - conda env create -f environment.yml
+        # - conda activate myenv
+        # # Poetry
+        # - poetry install
+    script:
+        - pip install -U sphinx --quiet
+        - pip install -U sphinx_rtd_theme --quiet
+        - pip install -U recommonmark --quiet
+        - pip install -U pyyaml --quiet
         - pip install -r requirements.txt --quiet
-        - python freezer.py
+        - sphinx-build -b html docs/source public
     artifacts:
         paths:
             - public
     only:
         - main
+
+# Doc: https://twine.readthedocs.io/en/stable/
+release:
+    stage: release
+    allow_failure: true
+    before_script:
+        - echo "machine gitlab.com login gitlab-ci-token password ${CI_JOB_TOKEN}" > ~/.netrc
+        - apt-get update && apt-get upgrade -y --quiet
+        - apt-get install build-essential libssl-dev libffi-dev python3-dev -y --quiet
+        - changed_files=$(git diff --no-commit-id --name-only -r $CI_COMMIT_SHA)
+        - pip install --upgrade pip setuptools wheel pipenv virtualenv conda poetry -- quiet
+        # Base
+        # - pip install -r requirements.txt
+        # # Virtualenv
+        # - virtualenv venv
+        # - source venv/bin/activate
+        # # Pipenv
+        # - pipenv install
+        # # Conda Env
+        # - conda env create -f environment.yml
+        # - conda activate myenv
+        # # Poetry
+        # - poetry install
+    script:
+        - pip install --upgrade pip --quiet
+        - pip install -r requirements.txt
+        - pip install -U twine --quiet
+        - python setup.py sdist bdist_wheel
+        - python -m twine upload
+          --repository-url https://gitlab.com/api/v4/projects/$CI_PROJECT_ID/packages/pypi
+          --username "gitlab-ci-token"
+          --password $CI_JOB_TOKEN
+          --verbose
+          dist/*
+    only: tags
+
+check-merge-request:
+    stage: test
+    before_script:
+        - echo "machine gitlab.com login gitlab-ci-token password ${CI_JOB_TOKEN}" > ~/.netrc
+        - apt-get update && apt-get upgrade -y --quiet
+        - apt-get install build-essential libssl-dev libffi-dev python3-dev -y --quiet
+        - changed_files=$(git diff --no-commit-id --name-only -r $CI_COMMIT_SHA)
+        - pip install --upgrade pip setuptools wheel pipenv virtualenv conda poetry -- quiet
+        # Base
+        # - pip install -r requirements.txt
+        # # Virtualenv
+        # - virtualenv venv
+        # - source venv/bin/activate
+        # # Pipenv
+        # - pipenv install
+        # # Conda Env
+        # - conda env create -f environment.yml
+        # - conda activate myenv
+        # # Poetry
+        # - poetry install
+    allow_failure: true
+    script:
+        - pip install pre-commit pytest --quiet
+        - pre-commit install
+        - git fetch
+        - git checkout $CI_MERGE_REQUEST_SOURCE_BRANCH_NAME
+        - git checkout $CI_MERGE_REQUEST_TARGET_BRANCH_NAME
+        # Identify cumulative additions/changes in merge request
+        - changed_files_in_MR=$(git diff --no-commit-id --name-only -r $CI_MERGE_REQUEST_TARGET_BRANCH_NAME)
+        - echo "Changed files in MR= $changed_files_in_MR"
+        - echo "Running pre-commit and pytest on changed files in MR"
+        - pre-commit run --files $changed_files_in_MR
+        # - python -m pytest -v --junitxml=pytest.xml
+    # artifacts:
+    #     when: always
+    #     reports:
+    #         junit: pytest.xml
+    rules:
+        - if: "$CI_MERGE_REQUEST_ID"
