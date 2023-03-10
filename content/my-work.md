@@ -4,6 +4,11 @@ My open sourced work can be found at my [GitHub](http://github.com/ehgp).
 
 Notable public software:
 
+* [ChatGPT Discord bot](https://github.com/ehgp/chatGPT-discord-bot)<br>
+OpenAI API, Discord API, Python, Docker, Docker Compose, GitHub Actions, Financial Modeling Prep API, OAuth 2.0<br>
+Forked template discord bot which is powered by OpenAI's GPT-3 API and Financial Modeling Prep API.<br>
+Integrations with Telegram and Slack in the works.<br>
+
 * [Religion Word Analysis](https://github.com/ehgp/religion_word_analysis)<br>
 Pipenv, NLTK Tokenization, Regular Expression, PyPDF2, GitHub Pages Sphinx Documentation<br>
 This project was inspired by this Reddit [post](https://www.reddit.com/r/dataisbeautiful/comments/mxu578/oc_remix_a_wordcloud_for_each_of_the_six_largest/?utm_source=share&utm_medium=android_app&utm_name=androidcss&utm_term=1&utm_content=share_button).<br>

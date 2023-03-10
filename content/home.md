@@ -4,7 +4,7 @@
 
 <h2 align="center">🌐 Web Developer 🧑‍💻 Data Scientist 🧩 Cybersecurity</h2>
 
-- 🌱 I’m currently learning **ERP**, **Industrial Sofware**
+- 🌱 I’m currently learning **ERP**, **Open Source Solutions**, **XR**
 
 - 👨‍💻 **[Projects](https://ehgp.github.io/my-work/)**
 
@@ -108,7 +108,8 @@
 ---
 
 ### 🔝 Most used languages
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ehgp&theme=github_dark&hide_border=true&hide=Jupyter%20Notebook,css,html,scss,python,MATLAB&layout=compact" type="image/svg" alt="languages"/>
+
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=ehgp&theme=github_dark&hide_border=true&hide=Jupyter%20Notebook,css,html,scss,python,MATLAB&layout=compact" type="image/svg" alt="languages"/>
 
 ---
 
