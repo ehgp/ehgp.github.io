@@ -1,20 +1,20 @@
 exclude: ".json$"
 repos:
-    # - repo: https://github.com/pre-commit/pre-commit-hooks
-    #   rev: v4.0.1
-    #   hooks:
-    #       - id: check-added-large-files
-    #       - id: check-case-conflict
-    #       - id: check-json
-    #       - id: check-merge-conflict
-    #       - id: check-symlinks
-    #       - id: check-toml
-    #       - id: check-yaml
-    #       - id: debug-statements
-    #       - id: detect-private-key
-    #       - id: end-of-file-fixer
-    #       - id: mixed-line-ending
-    #       - id: trailing-whitespace
+    - repo: https://github.com/pre-commit/pre-commit-hooks
+      rev: v4.0.1
+      hooks:
+          - id: check-added-large-files
+          - id: check-case-conflict
+          - id: check-json
+          - id: check-merge-conflict
+          - id: check-symlinks
+          - id: check-toml
+          - id: check-yaml
+          - id: debug-statements
+          - id: detect-private-key
+          - id: end-of-file-fixer
+          - id: mixed-line-ending
+          - id: trailing-whitespace
 
     - repo: https://github.com/pycqa/flake8
       rev: 5.0.4
@@ -27,11 +27,11 @@ repos:
       hooks:
           - id: black
 
-    - repo: https://github.com/pcqa/pylint
-      rev: v2.15.5
-      hooks:
-          - id: pylint
-            args: [--rcfile, linters/.pylintrc]
+    # - repo: https://github.com/pcqa/pylint
+    #   rev: v2.15.5
+    #   hooks:
+    #       - id: pylint
+    #         args: [--rcfile, linters/.pylintrc]
 
     - repo: https://github.com/pcqa/pydocstyle
       rev: 6.1.1
