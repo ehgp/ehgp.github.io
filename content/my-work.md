@@ -31,7 +31,7 @@ linting up to PEP8 standards.<br>
 
 * [ChemECoin](https://github.com/ehgp/chemecoin) - The crypto coin backed by chemical engineering technology and advancement for chemical engineers worldwide. Coin offerings done in 2018. [Solidity contract of Ropsten Testnet ERC20 Token](https://ropsten.etherscan.io/address/0xb6ba833c8065c138627b11249c842a6f567d3742)
 
-* [DATA603_TwitterAPI-AI](https://github.com/ehgp/DATA603_TwitterAPI-AI) - Big Data analysis of Twitter data via API to analyze users' sentiment about use of AI/ML Techniques by Private Companies.
+* [Twitter_Sentiment_AI](https://github.com/ehgp/Twitter_Sentiment_AI) - Big Data analysis of Twitter data via API to analyze users' sentiment about use of AI/ML Techniques by Private Companies.
 Using initial batch analysis from Twitter API into HDFS for Python Sentiment Analysis training.
 Deploying Real-Time Streaming analytics engine powered by Apache Kakfa, Apache Storm & Python.
 Python used for visualizations, Hadoop Windows VM Instance used.
