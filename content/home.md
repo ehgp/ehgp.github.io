@@ -34,12 +34,6 @@
 
 ---
 
-### 🧑‍🔬 This week I did
-
-<img src="https://github-readme-stats.vercel.app/api/wakatime?username=ehgp&theme=github_dark&hide_border=true" type="image/svg" alt="activity"/>
-
----
-
 <details>
   <summary>🧑‍💻 Languages</summary>
 
@@ -135,6 +129,14 @@
   [![windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://ehgp.github.io)
   [![linux](https://img.shields.io/badge/Linux-0168D6?style=for-the-badge&logo=linux&logoColor=white)](https://ehgp.github.io)
   [![unix](https://img.shields.io/badge/Mac-0168D6?style=for-the-badge&logo=Apple&logoColor=white)](https://ehgp.github.io)
+</details>
+
+---
+
+<details>
+  <summary>🧑‍🔬 This week I did</summary>
+
+  [![ehgp's wakatime stats](https://github-readme-stats.vercel.app/api/wakatime?username=ehgp&theme=github_dark&hide_border=true)](https://wakatime.com/@ehgp)
 </details>
 
 <!-- ---
