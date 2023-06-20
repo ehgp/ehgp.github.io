@@ -1,14 +1,10 @@
 <!DOCTYPE html>
-{% extends "base.html" %}
+{% extends "base.html" %} {% block title %} Resumes {% endblock %}
 
-{% block title %}
-  Resumes
-{% endblock %}
-
-{% block description %}
+<!-- {% block description %}
   Recent Resumes
-{% endblock %}
+{% endblock %} -->
 
-{% block content %}
-  {% include 'resumes.html' %}
-{% endblock %}
+{% block content %} {% include 'resumes.html' %}
+<h1 class="title">Contact</h1>
+{% include 'contact-card.html' %} {% endblock %}
