@@ -47,6 +47,13 @@ jobs:
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
+        env:
+          # any secrets you want available to the action as env vars
+          NEXT_PUBLIC_GTM_ID: ${{ secrets.NEXT_PUBLIC_GTM_ID }}
+          NEXT_PUBLIC_ADSENSE_CLIENT: ${{ secrets.NEXT_PUBLIC_ADSENSE_CLIENT }}
+          NEXT_PUBLIC_RECAPTCHA_SITE_KEY: ${{ secrets.NEXT_PUBLIC_RECAPTCHA_SITE_KEY }}
+          NEXT_PUBLIC_CONTACT_ENDPOINT: ${{ secrets.NEXT_PUBLIC_CONTACT_ENDPOINT }}
+          NEXT_PUBLIC_FORMSPREE: ${{ secrets.NEXT_PUBLIC_FORMSPREE }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: out
