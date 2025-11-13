@@ -1,0 +1,70 @@
+{
+  "name": "ehgp.github.io",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "export": "npm run build",
+    "start": "next start",
+    "lint": "eslint --max-warnings=0 . --ext .ts,.tsx",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:e2e": "playwright test",
+    "lighthouse": "lhci collect --config=./lighthouserc.json",
+    "format": "prettier --check \"src/**/*.{ts,tsx,mdx}\"",
+    "prepare": "husky"
+  },
+  "lint-staged": {
+    "src/**/*.{ts,tsx,mdx}": [
+      "eslint",
+      "prettier --write"
+    ]
+  },
+  "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
+    "@mui/icons-material": "^7.2.0",
+    "@mui/material": "^7.2.0",
+    "@mui/material-nextjs": "^7.3.5",
+    "@playwright/test": "^1.56.1",
+    "@types/luxon": "^3.4.2",
+    "@types/p5": "^1.7.7",
+    "axios": "^1.7.7",
+    "clsx": "^2.1.1",
+    "formik": "^2.4.5",
+    "framer-motion": "^12.0.6",
+    "luxon": "^3.4.4",
+    "next": "16.0.0",
+    "p5": "^2.1.1",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "react-google-recaptcha-v3": "^1.10.1",
+    "swiper": "^11.1.14",
+    "yup": "^1.4.0"
+  },
+  "devDependencies": {
+    "@testing-library/jest-dom": "^6.4.2",
+    "@testing-library/react": "^16.0.1",
+    "@testing-library/user-event": "^14.5.2",
+    "@types/node": "^22.7.4",
+    "@types/react": "^18.3.9",
+    "@types/react-dom": "^18.3.0",
+    "@typescript-eslint/eslint-plugin": "^8.8.0",
+    "@typescript-eslint/parser": "^8.8.0",
+    "eslint": "^9.9.0",
+    "eslint-config-next": "16.0.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-react": "^7.37.2",
+    "eslint-plugin-react-hooks": "^5.1.0",
+    "globals": "^15.9.0",
+    "@lhci/cli": "^0.15.1",
+    "husky": "^9.1.6",
+    "jsdom": "^27.1.0",
+    "lint-staged": "^15.2.10",
+    "prettier": "^3.3.3",
+    "typescript": "^5.6.2",
+    "vitest": "^1.6.0"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "ci": {
+    "collect": {
+      "staticDistDir": "out",
+      "settings": {
+        "preset": "desktop"
+      }
+    }
+  }
+}
