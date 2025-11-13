@@ -29,7 +29,7 @@ Copy `.env.example` to `.env.local` and provide:
 - `NEXT_PUBLIC_GTM_ID`, `NEXT_PUBLIC_ADSENSE_CLIENT` – analytics/Adsense IDs.
 - `NEXT_PUBLIC_RECAPTCHA_SITE_KEY` – reCAPTCHA v3 site key powering the contact form.
 - `NEXT_PUBLIC_CONTACT_ENDPOINT` – webhook or API endpoint that will receive submissions (e.g., Function, Zapier, Formspree).
-- `FORMSPREE` – optional Formspree endpoint; takes precedence over `NEXT_PUBLIC_CONTACT_ENDPOINT` when set.
+- `NEXT_PUBLIC_FORMSPREE` – optional Formspree endpoint; takes precedence over `NEXT_PUBLIC_CONTACT_ENDPOINT` when set.
 
 See `docs/recaptcha-server-example.md` for a sample Next.js API route that verifies tokens with Google before processing submissions.
 

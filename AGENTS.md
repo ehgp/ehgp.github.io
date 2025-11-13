@@ -29,7 +29,7 @@
   - Before modifying any tracked file, duplicate it to `filename.BAK` (or `filename.YYYYMMDDHHMM.BAK`) using `cp file file.BAK`. Never skip this backup step.
   - Preserve color palette, fonts, wording, and Google integrations (Tag Manager `GTM-WFF39GD`, AdSense `ca-pub-6937005527826464`, visitor badge) unless replacements are explicitly approved.
   - Every new UI addition must stay responsive (≥320px) and ship accessible focus states, alt text, and keyboard navigation.
-  - Secrets/IDs must come from environment variables (`NEXT_PUBLIC_GTM_ID`, `NEXT_PUBLIC_ADSENSE_CLIENT`, `NEXT_PUBLIC_RECAPTCHA_SITE_KEY`, `FORMSPREE`, `NEXT_PUBLIC_CONTACT_ENDPOINT`) sourced via `.env.local`, never hard-coded.
+  - Secrets/IDs must come from environment variables (`NEXT_PUBLIC_GTM_ID`, `NEXT_PUBLIC_ADSENSE_CLIENT`, `NEXT_PUBLIC_RECAPTCHA_SITE_KEY`, `NEXT_PUBLIC_FORMSPREE`, `NEXT_PUBLIC_CONTACT_ENDPOINT`) sourced via `.env.local`, never hard-coded.
 
 ## Migration Plan (LLM Execution Steps)
 
@@ -65,7 +65,7 @@
    - Implement sticky/slide-in nav replicating `ul#navbar` styling, but optimized for mobile (hamburger + Drawer) while keeping the uppercase typography.
    - Build reusable components for GitHub stats badges and language/framework grids; load data from config arrays to limit HTML duplication.
    - Introduce call-to-action buttons (Projects, Contact) with subtle gradients or animated outlines matching the original purple accent.
-   - Ship an accessible contact form that relies on `react-google-recaptcha-v3`, Formik validation, and environment-driven targets. On submit, attach the reCAPTCHA token and POST JSON to `FORMSPREE` (preferred) or `NEXT_PUBLIC_CONTACT_ENDPOINT`; surface success/error states inline, disable the button while submitting, and verify tokens server-side as documented in `docs/recaptcha-server-example.md`.
+   - Ship an accessible contact form that relies on `react-google-recaptcha-v3`, Formik validation, and environment-driven targets. On submit, attach the reCAPTCHA token and POST JSON to `NEXT_PUBLIC_FORMSPREE` (preferred) or `NEXT_PUBLIC_CONTACT_ENDPOINT`; surface success/error states inline, disable the button while submitting, and verify tokens server-side as documented in `docs/recaptcha-server-example.md`.
 
 6. **Testing, Accessibility & Performance**
    - Add unit tests for content mappers and page rendering (React Testing Library). Use Playwright or Cypress smoke tests for nav routing.

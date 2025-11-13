@@ -23,7 +23,7 @@
           "NEXT_PUBLIC_ADSENSE_CLIENT": "ca-pub-6937005527826464",
           "NEXT_PUBLIC_RECAPTCHA_SITE_KEY": "6LeetgosAAAAAOCvYimGDJHyvcRGxVEW0q5cXWmr",
           "NEXT_PUBLIC_CONTACT_ENDPOINT": "https://ehgp.github.io/contact",
-          "FORMSPREE":"https://formspree.io/f/xayzjzjg",
+          "NEXT_PUBLIC_FORMSPREE":"https://formspree.io/f/xayzjzjg",
           // "NEXT_PUBLIC_AUTH_METHOD": "logto",
           // "PUBLIC_SITE_ORIGIN": "https://egventures.net"
         }
