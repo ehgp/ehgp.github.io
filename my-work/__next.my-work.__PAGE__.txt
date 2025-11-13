@@ -1,0 +1,12 @@
+1:"$Sreact.fragment"
+2:I[614,["/_next/static/chunks/4e8362f3c97eadd6.js","/_next/static/chunks/cfefbbda1cfd3f3e.js","/_next/static/chunks/bc57f9d45a6acaa1.js","/_next/static/chunks/201f7597ee0c10a5.js"],"default"]
+3:I[72369,["/_next/static/chunks/4e8362f3c97eadd6.js","/_next/static/chunks/cfefbbda1cfd3f3e.js","/_next/static/chunks/bc57f9d45a6acaa1.js","/_next/static/chunks/201f7597ee0c10a5.js"],"default"]
+4:I[22016,["/_next/static/chunks/4e8362f3c97eadd6.js","/_next/static/chunks/cfefbbda1cfd3f3e.js","/_next/static/chunks/bc57f9d45a6acaa1.js","/_next/static/chunks/201f7597ee0c10a5.js"],""]
+5:I[36807,["/_next/static/chunks/4e8362f3c97eadd6.js","/_next/static/chunks/cfefbbda1cfd3f3e.js","/_next/static/chunks/bc57f9d45a6acaa1.js","/_next/static/chunks/201f7597ee0c10a5.js"],"default"]
+6:I[26863,["/_next/static/chunks/4e8362f3c97eadd6.js","/_next/static/chunks/cfefbbda1cfd3f3e.js","/_next/static/chunks/bc57f9d45a6acaa1.js","/_next/static/chunks/201f7597ee0c10a5.js"],"default"]
+7:I[6163,["/_next/static/chunks/4e8362f3c97eadd6.js","/_next/static/chunks/cfefbbda1cfd3f3e.js","/_next/static/chunks/bc57f9d45a6acaa1.js","/_next/static/chunks/201f7597ee0c10a5.js"],"default"]
+8:I[6614,["/_next/static/chunks/4e8362f3c97eadd6.js","/_next/static/chunks/cfefbbda1cfd3f3e.js","/_next/static/chunks/bc57f9d45a6acaa1.js","/_next/static/chunks/201f7597ee0c10a5.js"],"default"]
+9:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
+a:"$Sreact.suspense"
+0:{"buildId":"pIXSSf32dd9Cig7sAvS6K","rsc":["$","$1","c",{"children":[["$","$L2",null,{"spacing":4,"component":"main","children":[["$","$L3",null,{"title":"Software portfolio","eyebrow":"Projects","eyebrowVariant":"h4","action":["$","$L4",null,{"href":"https://github.com/ehgp?tab=repositories","target":"_blank","rel":"noreferrer","style":{"textDecoration":"none"},"children":["$","$L5",null,{"children":"Explore repositories"}]}],"children":["$","$L6",null,{"children":"My open sourced work can be found on GitHub."}]}],["$","$L3",null,{"title":"All Projects","eyebrow":"Projects Gallery","eyebrowVariant":"h4","children":["$","$L7",null,{"src":"https://drive.google.com/file/d/1UvN-gFCw8ms_Yo7RnwL3kBEOU8pJAKRE/preview","title":"Project gallery"}]}],["$","$L8",null,{}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/201f7597ee0c10a5.js","async":true}]],["$","$L9",null,{"children":["$","$a",null,{"name":"Next.MetadataOutlet","children":"$@b"}]}]]}],"loading":null,"isPartial":false}
+b:null

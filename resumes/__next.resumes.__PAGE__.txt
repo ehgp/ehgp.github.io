@@ -1,0 +1,10 @@
+1:"$Sreact.fragment"
+2:I[614,["/_next/static/chunks/4e8362f3c97eadd6.js","/_next/static/chunks/cfefbbda1cfd3f3e.js","/_next/static/chunks/bc57f9d45a6acaa1.js","/_next/static/chunks/201f7597ee0c10a5.js"],"default"]
+3:I[72369,["/_next/static/chunks/4e8362f3c97eadd6.js","/_next/static/chunks/cfefbbda1cfd3f3e.js","/_next/static/chunks/bc57f9d45a6acaa1.js","/_next/static/chunks/201f7597ee0c10a5.js"],"default"]
+4:I[26863,["/_next/static/chunks/4e8362f3c97eadd6.js","/_next/static/chunks/cfefbbda1cfd3f3e.js","/_next/static/chunks/bc57f9d45a6acaa1.js","/_next/static/chunks/201f7597ee0c10a5.js"],"default"]
+5:I[6163,["/_next/static/chunks/4e8362f3c97eadd6.js","/_next/static/chunks/cfefbbda1cfd3f3e.js","/_next/static/chunks/bc57f9d45a6acaa1.js","/_next/static/chunks/201f7597ee0c10a5.js"],"default"]
+6:I[6614,["/_next/static/chunks/4e8362f3c97eadd6.js","/_next/static/chunks/cfefbbda1cfd3f3e.js","/_next/static/chunks/bc57f9d45a6acaa1.js","/_next/static/chunks/201f7597ee0c10a5.js"],"default"]
+7:I[97367,["/_next/static/chunks/ff1a16fafef87110.js","/_next/static/chunks/247eb132b7f7b574.js"],"OutletBoundary"]
+8:"$Sreact.suspense"
+0:{"buildId":"pIXSSf32dd9Cig7sAvS6K","rsc":["$","$1","c",{"children":[["$","$L2",null,{"spacing":4,"component":"main","children":[["$","$L3",null,{"title":"Tech Resume","eyebrow":"Resumes","eyebrowVariant":"h4","children":[["$","$L4",null,{"variant":"body2","color":"text.secondary","mb":2,"children":"Embedded view hosted on Google Drive for the most recent version."}],["$","$L5",null,{"src":"https://drive.google.com/file/d/1yokQ2vI0eXsm9Uc5RfBffDwV5nTR01wz/preview","title":"Tech resume"}]]}],["$","$L6",null,{}]]}],[["$","script","script-0",{"src":"/_next/static/chunks/201f7597ee0c10a5.js","async":true}]],["$","$L7",null,{"children":["$","$8",null,{"name":"Next.MetadataOutlet","children":"$@9"}]}]]}],"loading":null,"isPartial":false}
+9:null
