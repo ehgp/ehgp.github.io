@@ -1,16 +1,39 @@
 {
     "version": "2.0.0",
     "tasks": [
+      // {
+      //   "label": "Run Flask Server",
+      //   "type": "shell",
+      //   "command": "python website.py",
+      //   "presentation": {
+      //     "reveal": "always",
+      //     "panel": "new",
+      //     "group": "develop",
+      //   },
+      //   "runOptions": { "runOn": "folderOpen" }
+      // },
       {
-        "label": "Run Flask Server",
+        "label": "Run Next Server",
         "type": "shell",
-        "command": "python website.py",
+        "command": "npm ci --no-fund && npm run dev",
+              "options": {
+        "cwd": "${workspaceFolder}",
+        "env": {
+          "NEXT_PUBLIC_GTM_ID": "GTM-WFF39GD",
+          "NEXT_PUBLIC_ADSENSE_CLIENT": "ca-pub-6937005527826464",
+          "NEXT_PUBLIC_RECAPTCHA_SITE_KEY": "6LeetgosAAAAAOCvYimGDJHyvcRGxVEW0q5cXWmr",
+          "NEXT_PUBLIC_CONTACT_ENDPOINT": "https://ehgp.github.io/contact",
+          "NEXT_PUBLIC_FORMSPREE":"https://formspree.io/f/xayzjzjg",
+          // "NEXT_PUBLIC_AUTH_METHOD": "logto",
+          // "PUBLIC_SITE_ORIGIN": "https://egventures.net"
+        }
+      },
         "presentation": {
           "reveal": "always",
           "panel": "new",
           "group": "develop",
         },
         "runOptions": { "runOn": "folderOpen" }
-      }
+      },
     ]
 }

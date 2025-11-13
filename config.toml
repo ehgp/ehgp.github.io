@@ -1,0 +1,59 @@
+model = "gpt-5-codex"
+model_reasoning_effort = "high"
+windows_wsl_setup_acknowledged = true
+
+# Keep conservative defaults: no outbound network unless you approve it.
+approval_policy = "never"
+sandbox_mode    = "workspace-write"
+
+[sandbox_workspace_write]
+# Networking stays OFF by default. You can temporarily enable it when you approve a run.
+network_access = true
+
+# Optional: central network policy. Mode 'allowlist' means *only* these domains are reachable when networking is enabled.
+[sandbox_network]
+mode = "allowlist"
+allowed_urls = [
+  "https://stackoverflow.com/questions",
+  "https://www.egventures.net/",
+  "https://mui.com/material-ui/migration/migration-v4",
+  "https://mui.com/material-ui",
+  "https://nextjs.org/docs/app/guides/upgrading/version-16",
+  "https://nextjs.org/docs",
+  "https://nextjs.org/docs/app/guides/progressive-web-apps",
+  "https://nextjs.org/docs/app/api-reference/components/image",
+  "https://emotion.sh/docs/introduction",
+  "https://ant.design/docs/react/use-with-next",
+  "https://developers.google.com/workspace/chat/api/reference/rest",
+  "https://trendingtoday.app",
+  "https://core.telegram.org/bots/api",
+  "https://discordpy.readthedocs.io/en/stable/api.html",
+  "https://www.selenium.dev/selenium/docs/api/py/api.html",
+  "https://flask.palletsprojects.com/en/stable/api/",
+  "https://github.com/SeleniumHQ/selenium/tree/selenium-4.37.0",
+  "https://github.com/ant-design/ant-design/tree/5.27.6",
+  "https://github.com/slackapi/bolt-python/tree/v1.26.0",
+  "https://github.com/slackapi/python-slack-sdk/tree/v3.37.0",
+  "https://github.com/googleapis/google-api-python-client/",
+  "https://github.com/OfficeDev/Microsoft-Teams-Samples/tree/main/samples/bot-conversation/python",
+  "https://github.com/microsoft/botbuilder-python/tree/main/generators/app/templates/echo/%7B%7Bcookiecutter.bot_name%7D%7D",
+  "https://trends.google.com",
+]
+
+# (Optional) You can be even stricter and pin to HTTPS only.
+enforce_https = true
+
+[features]
+web_search_request = true
+
+[mcp_servers.mcp-antd-components]
+command = "npx"
+args = ["-y", "mcp-antd-components"]
+
+[mcp_servers.mui-mcp]
+command = "npx"
+args = ["-y", "@mui/mcp@latest"]
+
+[mcp_servers.next-devtools]
+command = "npx"
+args = ["next-devtools-mcp@latest"]

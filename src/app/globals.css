@@ -1,0 +1,29 @@
+:root {
+  color-scheme: dark;
+  --bg-body: #000000;
+  --text-primary: #f5f5f5;
+  --text-secondary: #bdbdbd;
+  --accent: #d390d3;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background-color: var(--bg-body);
+  color: var(--text-primary);
+}
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
