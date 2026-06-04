@@ -4,7 +4,9 @@ img_gen/
 *.py[cod]
 *$py.class
 ehgp.github.io/
-
+.omc
+.omx
+.claude
 # secret
 private_config.py
 

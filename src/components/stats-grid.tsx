@@ -1,13 +1,15 @@
 "use client";
 
 import SectionCard from "@/components/section-card";
-import { githubStats } from "@/data/embeds";
+import { localStats } from "@/data/embeds";
 import { Box } from "@mui/material";
 
+// Locally cached SVGs (see scripts/fetch-stats.mjs); no runtime dependency on
+// the external stats services.
 const stats = [
-  { title: "GitHub Activity", src: githubStats.activity },
-  { title: "Contribution Streak", src: githubStats.streak },
-  { title: "Top Languages", src: githubStats.topLanguages },
+  { title: "GitHub Activity", src: localStats.activity },
+  { title: "Contribution Streak", src: localStats.streak },
+  { title: "Top Languages", src: localStats.topLanguages },
 ];
 
 export default function StatsGrid() {

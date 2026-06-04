@@ -13,6 +13,12 @@ export default function WakatimeCard() {
         target="_blank"
         rel="noreferrer"
       >
+        {/*
+          Served live (not cached like the other stats) because the WakaTime
+          card only has data once the WakaTime profile has tracked, public
+          coding activity. Until then the upstream renders an error card. Once
+          activity exists, scripts/fetch-stats.mjs will start caching it.
+        */}
         <Box
           component="img"
           src={githubStats.wakatime}

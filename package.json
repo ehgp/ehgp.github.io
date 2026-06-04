@@ -6,6 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "export": "npm run build",
+    "stats:fetch": "node scripts/fetch-stats.mjs",
     "start": "next start",
     "lint": "eslint --max-warnings=0 . --ext .ts,.tsx",
     "typecheck": "tsc --noEmit",
