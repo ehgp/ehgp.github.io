@@ -14,7 +14,6 @@ import { useGoogleReCaptcha } from "react-google-recaptcha-v3";
 import * as yup from "yup";
 
 const contactEndpoint = process.env.NEXT_PUBLIC_CONTACT_ENDPOINT;
-const formsprEndpoint = process.env.NEXT_PUBLIC_FORMSPREE;
 const recaptchaSiteKey = process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY;
 
 const validationSchema = yup.object({
@@ -54,12 +53,10 @@ export default function ContactForm() {
         return;
       }
 
-      const submissionEndpoint = formsprEndpoint ?? contactEndpoint;
-
-      if (!submissionEndpoint) {
+      if (!contactEndpoint) {
         setStatus("error");
         setStatusMessage(
-          "Contact endpoint is missing. Set NEXT_PUBLIC_FORMSPREE or NEXT_PUBLIC_CONTACT_ENDPOINT."
+          "Contact endpoint is missing. Set NEXT_PUBLIC_CONTACT_ENDPOINT."
         );
         helpers.setSubmitting(false);
         return;
@@ -67,16 +64,9 @@ export default function ContactForm() {
 
       try {
         const token = await executeRecaptcha("contact_form");
-        const payload = formsprEndpoint
-          ? {
-              email: values.email,
-              name: values.name,
-              message: values.message,
-              token,
-            }
-          : { ...values, token };
+        const payload = { ...values, token };
 
-        const response = await fetch(submissionEndpoint, {
+        const response = await fetch(contactEndpoint, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",

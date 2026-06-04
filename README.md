@@ -28,10 +28,9 @@ Copy `.env.example` to `.env.local` and provide:
 
 - `NEXT_PUBLIC_GTM_ID`, `NEXT_PUBLIC_ADSENSE_CLIENT` – analytics/Adsense IDs.
 - `NEXT_PUBLIC_RECAPTCHA_SITE_KEY` – reCAPTCHA v3 site key powering the contact form.
-- `NEXT_PUBLIC_CONTACT_ENDPOINT` – webhook or API endpoint that will receive submissions (e.g., Function, Zapier, Formspree).
-- `NEXT_PUBLIC_FORMSPREE` – optional Formspree endpoint; takes precedence over `NEXT_PUBLIC_CONTACT_ENDPOINT` when set.
+- `NEXT_PUBLIC_CONTACT_ENDPOINT` – URL of the contact function that receives submissions (the `contact-api` Vercel project, e.g. `https://<project>.vercel.app/api/contact`).
 
-See `docs/recaptcha-server-example.md` for a sample Next.js API route that verifies tokens with Google before processing submissions.
+The contact form posts to a standalone serverless function (`contact-api/`) that verifies the reCAPTCHA token server-side and emails the inquiry via Resend. See `contact-api/README.md` and `human-todo.md` for deployment, and `docs/recaptcha-server-example.md` for the verification pattern.
 
 Because `next.config.mjs` sets `output: 'export'`, `next build` creates the deployable `out/` directory that the workflow publishes to GitHub Pages.
 
@@ -70,7 +69,7 @@ The entire Frozen-Flask stack (templates, markdown content, static assets, requi
 - Color palette and typography honor the legacy monochrome + purple branding
 - All interactive elements keep focus outlines and ARIA labels where needed
 - The legacy p5 eye animation is ported to a client component that automatically disables itself when `prefers-reduced-motion: reduce` is detected
-- The contact form uses Formik + reCAPTCHA v3; configure the env vars above to connect it to your backend or webhook.
+- The contact form uses Formik + reCAPTCHA v3 and posts to the `contact-api` Vercel function, which verifies the token server-side and emails submissions via Resend.
 
 - Additional implementation notes:
   - `docs/animation-embed-guidelines.md` – animation fallbacks, embed rules, cache checklist.

@@ -21,7 +21,7 @@
 - [ ] Achieve Lighthouse scores >= 95 on desktop and mobile for Performance, Accessibility, Best Practices, SEO
 - [ ] Add Framer Motion transitions (fade/slide for section entry, hero underline blink, nav hover sweeps)
 - [ ] Build reusable badge grid components for languages/frameworks/tools (currently duplicated HTML)
-- [ ] Add contact form with reCAPTCHA v3 + Formspree integration using environment-driven config
+- [x] Add contact form with reCAPTCHA v3 + Resend (standalone Vercel function) integration using environment-driven config
 - [ ] Add Playwright or Cypress smoke tests for navigation routing
 - [ ] Implement accessible focus states, alt text, and keyboard navigation on all interactive elements
 
