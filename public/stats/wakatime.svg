@@ -1,0 +1,6 @@
+<svg width="495" height="118" viewBox="0 0 495 118" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WakaTime last 7 days">
+  <rect width="495" height="118" rx="6" fill="#0d1117"/>
+  <text x="25" y="32" fill="#d390d3" font-size="18" font-weight="600" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">WakaTime &#183; Last 7 Days</text>
+  <text x="25" y="54" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">Total 0 secs &#183; Daily avg 0 secs</text>
+  <text x="25" y="90" fill="#8b949e" font-size="13" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">No tracked coding time in the last 7 days.</text>
+</svg>

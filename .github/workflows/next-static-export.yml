@@ -5,6 +5,9 @@ on:
     branches: [main]
   pull_request:
     branches: [main]
+  schedule:
+    - cron: "0 6 * * *" # daily 06:00 UTC: rebuild with freshly fetched stats
+  workflow_dispatch:
 
 jobs:
   build:
@@ -34,6 +37,14 @@ jobs:
 
       - name: Type check
         run: npm run typecheck
+
+      - name: Refresh cached stats SVGs
+        # Pull fresh stats at build time so the deployed site stays current
+        # (scheduled daily). Tolerant: if an upstream source is paused or
+        # rate-limited, keep the committed SVGs as a fallback rather than
+        # failing the deploy.
+        continue-on-error: true
+        run: node scripts/fetch-stats.mjs
 
       - name: Build static export
         run: npm run build

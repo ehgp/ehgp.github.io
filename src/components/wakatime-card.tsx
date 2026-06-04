@@ -1,7 +1,7 @@
 "use client";
 
 import SectionCard from "@/components/section-card";
-import { githubStats } from "@/data/embeds";
+import { localStats } from "@/data/embeds";
 import { Box } from "@mui/material";
 
 export default function WakatimeCard() {
@@ -14,15 +14,14 @@ export default function WakatimeCard() {
         rel="noreferrer"
       >
         {/*
-          Served live (not cached like the other stats) because the WakaTime
-          card only has data once the WakaTime profile has tracked, public
-          coding activity. Until then the upstream renders an error card. Once
-          activity exists, scripts/fetch-stats.mjs will start caching it.
+          Cached SVG built from the WakaTime JSON API by scripts/fetch-stats.mjs.
+          When no coding time was tracked in the last 7 days the card renders a
+          "no tracked coding time" state instead of an upstream error card.
         */}
         <Box
           component="img"
-          src={githubStats.wakatime}
-          alt="Wakatime stats"
+          src={localStats.wakatime}
+          alt="WakaTime last 7 days"
           loading="lazy"
           sx={{ width: "100%", borderRadius: 2 }}
         />
