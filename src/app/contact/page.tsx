@@ -6,7 +6,7 @@ import { Stack, Typography } from "@mui/material";
 export default function ContactPage() {
   return (
     <Stack spacing={4} component="main">
-      <SectionCard
+      {/* <SectionCard
         title="Let’s collaborate"
         eyebrow="Contact"
         eyebrowVariant="h4"
@@ -18,7 +18,7 @@ export default function ContactPage() {
           </Typography>
           <ContactForm />
         </Stack>
-      </SectionCard>
+      </SectionCard> */}
       <ContactList />
     </Stack>
   );
