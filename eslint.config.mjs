@@ -26,7 +26,7 @@ const projectRules = {
 
 export default [
   {
-    ignores: ['node_modules', '.next', 'out', 'public', '_build', 'legacy']
+    ignores: ['node_modules', '.next', 'out', 'public', '_build', 'legacy', 'contact-api']
   },
   ...next,
   ...tsConfigs,

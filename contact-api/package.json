@@ -1,0 +1,15 @@
+{
+  "name": "ehgp-contact-api",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Serverless contact endpoint for ehgp.github.io: reCAPTCHA v3 verification + Resend email delivery.",
+  "type": "module",
+  "dependencies": {
+    "resend": "^6.9.2"
+  },
+  "devDependencies": {
+    "@types/node": "^25.9.1",
+    "@vercel/node": "^5.8.12",
+    "typescript": "^6.0.3"
+  }
+}

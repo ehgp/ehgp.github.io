@@ -1,7 +1,7 @@
 "use client";
 
 import SectionCard from "@/components/section-card";
-import { githubStats } from "@/data/embeds";
+import { localStats } from "@/data/embeds";
 import { Box } from "@mui/material";
 
 export default function WakatimeCard() {
@@ -13,10 +13,15 @@ export default function WakatimeCard() {
         target="_blank"
         rel="noreferrer"
       >
+        {/*
+          Cached SVG built from the WakaTime JSON API by scripts/fetch-stats.mjs.
+          When no coding time was tracked in the last 7 days the card renders a
+          "no tracked coding time" state instead of an upstream error card.
+        */}
         <Box
           component="img"
-          src={githubStats.wakatime}
-          alt="Wakatime stats"
+          src={localStats.wakatime}
+          alt="WakaTime last 7 days"
           loading="lazy"
           sx={{ width: "100%", borderRadius: 2 }}
         />

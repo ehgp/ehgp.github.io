@@ -29,3 +29,4 @@ export async function POST(request: Request) {
 - Store `RECAPTCHA_SECRET_KEY` on the server (never expose it to the client).
 - Consider logging `verify.score` so you can adjust thresholds.
 - If deploying to a static host (GitHub Pages), point `NEXT_PUBLIC_CONTACT_ENDPOINT` to a serverless function (Vercel, Cloudflare, AWS Lambda) running the same logic.
+- This repo implements exactly that as a standalone Vercel function in `contact-api/` (reCAPTCHA v3 verification + Resend email delivery). See `human-todo.md` for deployment steps.
