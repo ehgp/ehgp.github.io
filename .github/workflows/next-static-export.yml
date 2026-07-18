@@ -16,8 +16,6 @@ jobs:
       # any secrets you want available to the action as env vars
       NEXT_PUBLIC_GTM_ID: ${{ secrets.NEXT_PUBLIC_GTM_ID }}
       NEXT_PUBLIC_ADSENSE_CLIENT: ${{ secrets.NEXT_PUBLIC_ADSENSE_CLIENT }}
-      NEXT_PUBLIC_RECAPTCHA_SITE_KEY: ${{ secrets.NEXT_PUBLIC_RECAPTCHA_SITE_KEY }}
-      NEXT_PUBLIC_CONTACT_ENDPOINT: ${{ secrets.NEXT_PUBLIC_CONTACT_ENDPOINT }}
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -38,12 +36,23 @@ jobs:
         run: npm run typecheck
 
       - name: Refresh cached stats SVGs
-        # Pull fresh stats at build time so the deployed site stays current
-        # (scheduled daily). Tolerant: if an upstream source is paused or
-        # rate-limited, keep the committed SVGs as a fallback rather than
-        # failing the deploy.
+        # Build fresh stats cards from the GitHub / WakaTime APIs at build time
+        # so the deployed site stays current (scheduled daily). Requires the
+        # GH_STATS_TOKEN secret (a PAT with repo read access) so private-repo
+        # activity is counted like the committed cards; the workflow's own
+        # GITHUB_TOKEN only sees public repos and would silently deploy much
+        # lower numbers. Without the secret, keep the committed SVGs.
+        # Tolerant: if a source is unreachable, keep the committed SVGs as a
+        # fallback rather than failing the deploy.
         continue-on-error: true
-        run: node scripts/fetch-stats.mjs
+        env:
+          GITHUB_TOKEN: ${{ secrets.GH_STATS_TOKEN }}
+        run: |
+          if [ -z "$GITHUB_TOKEN" ]; then
+            echo "GH_STATS_TOKEN secret not set; keeping committed stats SVGs."
+            exit 0
+          fi
+          node scripts/fetch-stats.mjs
 
       - name: Build static export
         run: npm run build
@@ -57,12 +66,6 @@ jobs:
       - name: Deploy to GitHub Pages
         if: github.ref == 'refs/heads/main'
         uses: peaceiris/actions-gh-pages@v3
-        env:
-          # any secrets you want available to the action as env vars
-          NEXT_PUBLIC_GTM_ID: ${{ secrets.NEXT_PUBLIC_GTM_ID }}
-          NEXT_PUBLIC_ADSENSE_CLIENT: ${{ secrets.NEXT_PUBLIC_ADSENSE_CLIENT }}
-          NEXT_PUBLIC_RECAPTCHA_SITE_KEY: ${{ secrets.NEXT_PUBLIC_RECAPTCHA_SITE_KEY }}
-          NEXT_PUBLIC_CONTACT_ENDPOINT: ${{ secrets.NEXT_PUBLIC_CONTACT_ENDPOINT }}
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: out
