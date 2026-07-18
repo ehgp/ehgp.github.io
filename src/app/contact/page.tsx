@@ -1,7 +1,5 @@
-import ContactForm from "@/components/contact-form";
 import ContactList from "@/components/contact-list";
-import SectionCard from "@/components/section-card";
-import { Stack, Typography } from "@mui/material";
+import { Stack } from "@mui/material";
 
 export default function ContactPage() {
   return (
