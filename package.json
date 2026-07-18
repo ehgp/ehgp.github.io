@@ -34,18 +34,16 @@
     "@types/p5": "^1.7.7",
     "axios": "^1.7.7",
     "clsx": "^2.1.1",
-    "formik": "^2.4.5",
     "framer-motion": "^12.0.6",
     "luxon": "^3.4.4",
     "next": "16.0.0",
     "p5": "^2.1.1",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "react-google-recaptcha-v3": "^1.10.1",
-    "swiper": "^11.1.14",
-    "yup": "^1.4.0"
+    "swiper": "^11.1.14"
   },
   "devDependencies": {
+    "@lhci/cli": "^0.15.1",
     "@testing-library/jest-dom": "^6.4.2",
     "@testing-library/react": "^16.0.1",
     "@testing-library/user-event": "^14.5.2",
@@ -60,7 +58,6 @@
     "eslint-plugin-react": "^7.37.2",
     "eslint-plugin-react-hooks": "^5.1.0",
     "globals": "^15.9.0",
-    "@lhci/cli": "^0.15.1",
     "husky": "^9.1.6",
     "jsdom": "^27.1.0",
     "lint-staged": "^15.2.10",

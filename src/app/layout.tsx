@@ -4,7 +4,6 @@ import AnalyticsScripts, {
 import Navigation from "@/components/navigation";
 import SiteFooter from "@/components/site-footer";
 import VisitorBadge from "@/components/visitor-badge";
-import RecaptchaProvider from "@/providers/recaptcha-provider";
 import AppThemeProvider from "@/providers/theme-provider";
 import { Box, Container, Stack } from "@mui/material";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
@@ -77,22 +76,20 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <GoogleTagManagerNoscript />
         <AnalyticsScripts />
         <AppRouterCacheProvider options={{ key: "mui" }}>
-          <RecaptchaProvider>
-            <AppThemeProvider>
-              <Container maxWidth="lg" sx={{ py: { xs: 4, md: 8 } }}>
-                <Stack direction={{ xs: "column", md: "row" }} spacing={4}>
-                  <Box sx={{ width: { xs: "100%", md: 260 } }}>
-                    <Navigation />
-                  </Box>
-                  <Stack spacing={4} flex={1}>
-                    {children}
-                    <SiteFooter />
-                    <VisitorBadge />
-                  </Stack>
+          <AppThemeProvider>
+            <Container maxWidth="lg" sx={{ py: { xs: 4, md: 8 } }}>
+              <Stack direction={{ xs: "column", md: "row" }} spacing={4}>
+                <Box sx={{ width: { xs: "100%", md: 260 } }}>
+                  <Navigation />
+                </Box>
+                <Stack spacing={4} flex={1}>
+                  {children}
+                  <SiteFooter />
+                  <VisitorBadge />
                 </Stack>
-              </Container>
-            </AppThemeProvider>
-          </RecaptchaProvider>
+              </Stack>
+            </Container>
+          </AppThemeProvider>
         </AppRouterCacheProvider>
       </body>
     </html>
