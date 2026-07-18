@@ -29,7 +29,7 @@
   - Before modifying any tracked file, duplicate it to `filename.BAK` (or `filename.YYYYMMDDHHMM.BAK`) using `cp file file.BAK`. Never skip this backup step.
   - Preserve color palette, fonts, wording, and Google integrations (Tag Manager `GTM-WFF39GD`, AdSense `ca-pub-6937005527826464`, visitor badge) unless replacements are explicitly approved.
   - Every new UI addition must stay responsive (≥320px) and ship accessible focus states, alt text, and keyboard navigation.
-  - Secrets/IDs must come from environment variables (`NEXT_PUBLIC_GTM_ID`, `NEXT_PUBLIC_ADSENSE_CLIENT`, `NEXT_PUBLIC_RECAPTCHA_SITE_KEY`, `NEXT_PUBLIC_FORMSPREE`, `NEXT_PUBLIC_CONTACT_ENDPOINT`) sourced via `.env.local`, never hard-coded.
+  - Secrets/IDs must come from environment variables (`NEXT_PUBLIC_GTM_ID`, `NEXT_PUBLIC_ADSENSE_CLIENT`) sourced via `.env.local`, never hard-coded.
 
 ## Migration Plan (LLM Execution Steps)
 
@@ -52,7 +52,7 @@
 - Load Inter + Roboto Mono via `next/font/google`, inject through `<CssBaseline />`, and mirror the card/glow look with `Paper` shadows and `boxShadow: '-40px -22px 0 0 rgba(128,0,128,0.35)'`.
 - Encapsulate repeated card shells (title, optional arrow link, body) as a `SectionCard` component with variants for hero/about/work/contact/resume.
 - Wrap the entire layout body with `AppRouterCacheProvider` from `@mui/material-nextjs/v14-appRouter` before mounting the app’s theme provider so that Emotion caches stay in sync across SSR/CSR and prevent hydration mismatches.
-- Expose client-only libs (MUI ThemeProvider, reCAPTCHA provider, animations) inside dedicated client components so server components stay deterministic.
+- Expose client-only libs (MUI ThemeProvider, animations) inside dedicated client components so server components stay deterministic.
 
 4. **Content Migration**
    - Convert Markdown files into either MDX (`/content/*.mdx`) or structured data modules (e.g., `src/content/home.ts`) that export typed objects for: hero copy, badge metadata, stats image URLs, embed IDs, contact links, resume/project IDs.
@@ -65,7 +65,7 @@
    - Implement sticky/slide-in nav replicating `ul#navbar` styling, but optimized for mobile (hamburger + Drawer) while keeping the uppercase typography.
    - Build reusable components for GitHub stats badges and language/framework grids; load data from config arrays to limit HTML duplication.
    - Introduce call-to-action buttons (Projects, Contact) with subtle gradients or animated outlines matching the original purple accent.
-   - Ship an accessible contact form that relies on `react-google-recaptcha-v3`, Formik validation, and environment-driven targets. On submit, attach the reCAPTCHA token and POST JSON to `NEXT_PUBLIC_FORMSPREE` (preferred) or `NEXT_PUBLIC_CONTACT_ENDPOINT`; surface success/error states inline, disable the button while submitting, and verify tokens server-side as documented in `docs/recaptcha-server-example.md`.
+   - The contact page is a social/email link list only. The contact form (and its reCAPTCHA/Formik/`contact-api` plumbing) was removed in July 2026 — do not reintroduce it without explicit approval.
 
 6. **Testing, Accessibility & Performance**
    - Add unit tests for content mappers and page rendering (React Testing Library). Use Playwright or Cypress smoke tests for nav routing.
@@ -92,7 +92,7 @@
 - **Images & Icons:** Configure `next.config.mjs` remote patterns for GitHub badge providers and optionally download static badges into `/public/badges` if caching is needed. Use `@mui/icons-material` for socials while matching brand colors (#1DA1F2 for Twitter, #4078c0 for GitHub/LinkedIn, #ffa930 for email).
 - **SEO:** Recreate canonical URL, og/twitter meta, theme color, favicon links, and Google site verification meta via the App Router `metadata` export. Add JSON-LD (`Person` schema) describing EHGP's roles.
 - **Content Integrity:** Keep wording from Markdown files verbatim unless asked otherwise. Provide toggles (accordion) for the long badge sections similar to the `<details>` sections currently used.
-- **Data Privacy:** Do not hard-code secrets. If adding contact forms or reCAPTCHA (`react-google-recaptcha-v3` already listed), load keys via environment variables and expose only the site key client-side.
+- **Data Privacy:** Do not hard-code secrets. If adding third-party integrations that need keys, load them via environment variables and expose only public keys client-side.
 
 ## Repository Guidelines
 
@@ -107,7 +107,7 @@
   - `npm run build && npm run export` → production bundle to `out/`.
 - **Coding Standards:** Enforce TypeScript strictness, avoid `any`, prefer hooks + server components where static data suffices, and isolate client-only behavior (`"use client"`). Document complex logic with concise comments.
 - **Documentation:** Update README + AGENTS anytime instructions change. Include screenshots/gifs after major visual work. Track open questions inside `TODO-AGENTS.md`.
-- **Documentation of dynamic UX:** Whenever animations, embed behaviors, or third-party scripts change, record the decision (including fallbacks and accessibility impacts) in AGENTS + README. Supplement with `docs/animation-embed-guidelines.md` (animations/embeds/cache), `docs/recaptcha-server-example.md` (backend verification), `docs/badge-strategy.md` (badge hosting rationale), and `docs/observability.md` (Lighthouse + screenshot workflow).
+- **Documentation of dynamic UX:** Whenever animations, embed behaviors, or third-party scripts change, record the decision (including fallbacks and accessibility impacts) in AGENTS + README. Supplement with `docs/animation-embed-guidelines.md` (animations/embeds/cache), `docs/badge-strategy.md` (badge hosting rationale), and `docs/observability.md` (Lighthouse + screenshot workflow).
 - **Legacy Code:** Keep Flask files read-only references until the Next.js site is deployed; after sign-off, move them under `legacy/` with notes explaining archival status.
 
 ## Validation Checklist (Run Before Hand-off)
@@ -119,7 +119,7 @@
 - Animations respect `prefers-reduced-motion` and maintain ≥45fps on mid-tier hardware.
 - CI workflow green on GitHub Actions, artifact `out/` published to `gh-pages`.
 - README + AGENTS describe the new stack and steps accurately.
-- `.env` values (`NEXT_PUBLIC_GTM_ID`, `NEXT_PUBLIC_ADSENSE_CLIENT`, `NEXT_PUBLIC_RECAPTCHA_SITE_KEY`, `NEXT_PUBLIC_CONTACT_ENDPOINT`) exist in deployment environments or the contact form/analytics are gracefully disabled with warnings.
+- `.env` values (`NEXT_PUBLIC_GTM_ID`, `NEXT_PUBLIC_ADSENSE_CLIENT`) exist as repository-level Actions secrets or analytics are gracefully disabled with warnings.
 
 ## Deliverables & Open Items
 

@@ -51,7 +51,7 @@
    - Home: hero heading, tagline card, GitHub stats grid, language/framework badges, social buttons, Wakatime embed, visitor counter.
    - About: profile banner, summary markdown, contact CTA.
    - My Work: Markdown intro, Google Drive project embed, CTA buttons.
-   - Contact: icon list with MUI icons, `mailto:` obfuscation, optional contact form using `react-google-recaptcha-v3` site key env.
+   - Contact: icon list with MUI icons and `mailto:` obfuscation (contact form removed July 2026).
    - Resumes: Google Drive embed, link downloads.
 2. Add Framer Motion animations (fade-up on cards, hover lift, blink caret). Provide `useReducedMotion` checks.
 3. Ensure all embed iframes and canvases are responsive, lazy-loaded, and accessible (title, `aria-label`).

@@ -10,11 +10,11 @@ test.describe('navigation', () => {
     });
   }
 
-  test('contact form is interactive', async ({ page }) => {
+  test('contact page lists ways to reach out', async ({ page }) => {
     await page.goto('/contact');
-    await page.getByLabel('Name').fill('Test User');
-    await page.getByLabel('Email').fill('test@example.com');
-    await page.getByLabel('Message').fill('Automated test message.');
-    await expect(page.getByRole('button', { name: /send message/i })).toBeEnabled();
+    await expect(page.getByText('Reach out')).toBeVisible();
+    await expect(
+      page.locator('a[href^="mailto:"]').first()
+    ).toBeVisible();
   });
 });
