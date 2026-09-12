@@ -1,0 +1,35 @@
+<svg width="495" height="214" viewBox="0 0 495 214" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="WakaTime last 7 days">
+  <rect width="495" height="214" rx="6" fill="#0d1117"/>
+  <text x="25" y="32" fill="#d390d3" font-size="18" font-weight="600" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">WakaTime · Last 7 Days</text>
+  <text x="25" y="54" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">Total 9 hrs 47 mins · Daily avg 3 hrs 15 mins</text>
+  <g transform="translate(0, 72)">
+    <text x="25" y="13" fill="#c9d1d9" font-size="13" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">TypeScript</text>
+    <rect x="150" y="4" width="230" height="8" rx="4" fill="#333333"/>
+    <rect x="150" y="4" width="85.2" height="8" rx="4" fill="#d390d3"/>
+    <text x="480" y="13" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" text-anchor="end">3 hrs 48 mins</text>
+  </g>
+  <g transform="translate(0, 98)">
+    <text x="25" y="13" fill="#c9d1d9" font-size="13" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">Markdown</text>
+    <rect x="150" y="4" width="230" height="8" rx="4" fill="#333333"/>
+    <rect x="150" y="4" width="69.3" height="8" rx="4" fill="#d390d3"/>
+    <text x="480" y="13" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" text-anchor="end">3 hrs 6 mins</text>
+  </g>
+  <g transform="translate(0, 124)">
+    <text x="25" y="13" fill="#c9d1d9" font-size="13" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">Python</text>
+    <rect x="150" y="4" width="230" height="8" rx="4" fill="#333333"/>
+    <rect x="150" y="4" width="17.8" height="8" rx="4" fill="#d390d3"/>
+    <text x="480" y="13" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" text-anchor="end">47 mins</text>
+  </g>
+  <g transform="translate(0, 150)">
+    <text x="25" y="13" fill="#c9d1d9" font-size="13" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">JavaScript</text>
+    <rect x="150" y="4" width="230" height="8" rx="4" fill="#333333"/>
+    <rect x="150" y="4" width="13.6" height="8" rx="4" fill="#d390d3"/>
+    <text x="480" y="13" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" text-anchor="end">36 mins</text>
+  </g>
+  <g transform="translate(0, 176)">
+    <text x="25" y="13" fill="#c9d1d9" font-size="13" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">JSON</text>
+    <rect x="150" y="4" width="230" height="8" rx="4" fill="#333333"/>
+    <rect x="150" y="4" width="13.6" height="8" rx="4" fill="#d390d3"/>
+    <text x="480" y="13" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" text-anchor="end">36 mins</text>
+  </g>
+</svg>
