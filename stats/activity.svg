@@ -1,0 +1,24 @@
+<svg width="495" height="214" viewBox="0 0 495 214" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="GitHub activity stats">
+  <rect width="495" height="214" rx="6" fill="#0d1117"/>
+  <text x="25" y="32" fill="#d390d3" font-size="18" font-weight="600" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">GitHub · Stats</text>
+  <g transform="translate(0, 72)">
+    <text x="25" y="13" fill="#c9d1d9" font-size="13" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">Total Stars Earned</text>
+    <text x="470" y="13" fill="#d390d3" font-size="13" font-weight="600" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" text-anchor="end">7</text>
+  </g>
+  <g transform="translate(0, 98)">
+    <text x="25" y="13" fill="#c9d1d9" font-size="13" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">Total Commits (all time)</text>
+    <text x="470" y="13" fill="#d390d3" font-size="13" font-weight="600" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" text-anchor="end">801</text>
+  </g>
+  <g transform="translate(0, 124)">
+    <text x="25" y="13" fill="#c9d1d9" font-size="13" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">Total PRs</text>
+    <text x="470" y="13" fill="#d390d3" font-size="13" font-weight="600" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" text-anchor="end">69</text>
+  </g>
+  <g transform="translate(0, 150)">
+    <text x="25" y="13" fill="#c9d1d9" font-size="13" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">Total Issues</text>
+    <text x="470" y="13" fill="#d390d3" font-size="13" font-weight="600" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" text-anchor="end">4</text>
+  </g>
+  <g transform="translate(0, 176)">
+    <text x="25" y="13" fill="#c9d1d9" font-size="13" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">Contributed to (past year)</text>
+    <text x="470" y="13" fill="#d390d3" font-size="13" font-weight="600" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" text-anchor="end">0</text>
+  </g>
+</svg>
