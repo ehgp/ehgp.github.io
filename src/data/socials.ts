@@ -26,7 +26,7 @@ export const primarySocials: SocialLink[] = [
   },
   {
     label: "📫 Reach me",
-    href: "mailto:ehgp@utexas.edu",
+    href: "mailto:ehgp95@gmail.com",
     icon: "email",
     color: "#FFA930",
   },
@@ -59,7 +59,7 @@ export const contactLinks: SocialLink[] = [
   },
   {
     label: "Mail EHGP",
-    href: "mailto:ehgp@utexas.edu",
+    href: "mailto:ehgp95@gmail.com",
     icon: "email",
     color: "#FFA930",
   },

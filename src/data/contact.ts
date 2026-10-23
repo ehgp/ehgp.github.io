@@ -16,8 +16,8 @@ export const contactMethods: ContactMethod[] = [
   },
   {
     label: 'Email',
-    value: 'ehgp@utexas.edu',
-    href: 'mailto:ehgp@utexas.edu',
+    value: 'ehgp95@gmail.com',
+    href: 'mailto:ehgp95@gmail.com',
     icon: 'email',
     color: '#FFA930'
   },
