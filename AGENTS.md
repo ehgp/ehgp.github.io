@@ -20,7 +20,7 @@
 
 ## Target Stack & Guardrails
 
-- **Runtime & Tooling:** Node.js 20 (or latest LTS), npm (or pnpm) with lockfile committed, TypeScript ≥ 5.6 in strict mode, ESLint 9 + `@typescript-eslint`, Prettier, Husky + lint-staged, Jest or Vitest + React Testing Library.
+- **Runtime & Tooling:** Node.js 24.22.1, npm (or pnpm) with lockfile committed, TypeScript ≥ 5.6 in strict mode, ESLint 9 + `@typescript-eslint`, Prettier, Husky + lint-staged, Jest or Vitest + React Testing Library.
 - **Framework:** Next.js 16 App Router (`src/app`), React 19, MUI v7 (`@mui/material@^7`, `@emotion/react`, `@emotion/styled`, `@mui/icons-material`).
 - **Styling & Animations:** MUI theme overrides + CSS variables for palette, Framer Motion for declarative transitions, and `prefers-reduced-motion` fallbacks.
 - **Content Pipeline:** Either Contentlayer, MDX, or strongly typed JSON/TS modules that ingest the existing Markdown while allowing the heavy HTML (badge sections) to live in MDX-friendly components.
@@ -73,7 +73,7 @@
    - Use Lighthouse (desktop & mobile) to confirm ≥95 performance/accessibility. Tune MUI loading (`next/script` for GTM/AdSense deferred) to avoid layout shift.
 
 7. **CI/CD & Deployment**
-   - Replace the Python workflow with a Node-based pipeline: checkout → `actions/setup-node@v4` (Node 20) → `npm ci` → lint/typecheck/test/build/export → deploy `out/` via `peaceiris/actions-gh-pages@v3`.
+   - Replace the Python workflow with a Node-based pipeline: checkout → `actions/setup-node@v4` (Node 24.22.1) → `npm ci` → lint/typecheck/test/build/export → deploy `out/` via `peaceiris/actions-gh-pages@v3`.
    - Keep the legacy Flask workflow reachable (rename to `python-legacy.yml`) until the Next export has been live-tested. Document rollback steps.
    - Update README to describe the new stack and remove instructions about running `freezer.py` once migration completes.
 
