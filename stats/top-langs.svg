@@ -1,0 +1,40 @@
+<svg width="495" height="240" viewBox="0 0 495 240" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Most used languages">
+  <rect width="495" height="240" rx="6" fill="#0d1117"/>
+  <text x="25" y="32" fill="#d390d3" font-size="18" font-weight="600" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">GitHub · Top Languages</text>
+  <g transform="translate(0, 72)">
+    <text x="25" y="13" fill="#c9d1d9" font-size="13" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">PHP</text>
+    <rect x="150" y="4" width="230" height="8" rx="4" fill="#333333"/>
+    <rect x="150" y="4" width="146.3" height="8" rx="4" fill="#d390d3"/>
+    <text x="480" y="13" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" text-anchor="end">63.6%</text>
+  </g>
+  <g transform="translate(0, 98)">
+    <text x="25" y="13" fill="#c9d1d9" font-size="13" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">JavaScript</text>
+    <rect x="150" y="4" width="230" height="8" rx="4" fill="#333333"/>
+    <rect x="150" y="4" width="74.7" height="8" rx="4" fill="#d390d3"/>
+    <text x="480" y="13" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" text-anchor="end">32.5%</text>
+  </g>
+  <g transform="translate(0, 124)">
+    <text x="25" y="13" fill="#c9d1d9" font-size="13" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">TypeScript</text>
+    <rect x="150" y="4" width="230" height="8" rx="4" fill="#333333"/>
+    <rect x="150" y="4" width="6.3" height="8" rx="4" fill="#d390d3"/>
+    <text x="480" y="13" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" text-anchor="end">2.8%</text>
+  </g>
+  <g transform="translate(0, 150)">
+    <text x="25" y="13" fill="#c9d1d9" font-size="13" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">Hack</text>
+    <rect x="150" y="4" width="230" height="8" rx="4" fill="#333333"/>
+    <rect x="150" y="4" width="1.0" height="8" rx="4" fill="#d390d3"/>
+    <text x="480" y="13" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" text-anchor="end">0.4%</text>
+  </g>
+  <g transform="translate(0, 176)">
+    <text x="25" y="13" fill="#c9d1d9" font-size="13" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">PowerShell</text>
+    <rect x="150" y="4" width="230" height="8" rx="4" fill="#333333"/>
+    <rect x="150" y="4" width="0.8" height="8" rx="4" fill="#d390d3"/>
+    <text x="480" y="13" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" text-anchor="end">0.4%</text>
+  </g>
+  <g transform="translate(0, 202)">
+    <text x="25" y="13" fill="#c9d1d9" font-size="13" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif">VBA</text>
+    <rect x="150" y="4" width="230" height="8" rx="4" fill="#333333"/>
+    <rect x="150" y="4" width="0.8" height="8" rx="4" fill="#d390d3"/>
+    <text x="480" y="13" fill="#8b949e" font-size="12" font-family="'Segoe UI', Ubuntu, Helvetica, Arial, sans-serif" text-anchor="end">0.3%</text>
+  </g>
+</svg>
